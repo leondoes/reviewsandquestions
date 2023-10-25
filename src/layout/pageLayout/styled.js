@@ -1,10 +1,7 @@
 import styled from "styled-components";
-import { themeColors, themeFonts } from "../../common/theme";
-import backgroundPattern from "../../Assets/background.png";
 
 export const PageContainer = styled.div`
-  background-image: url(${backgroundPattern});
-  background-color: black;
+  background-color: white;
   height: 100%;
   width: 100%;
   height: 100vh;
@@ -53,11 +50,4 @@ export const ContentContainer = styled.div`
   overflow-y: auto;
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;
-`;
-
-export const Footer = styled.div`
-  font-family: ${themeFonts.brandFont};
-  color: ${themeColors.font};
-  position: fixed;
-  bottom: 10px;
 `;

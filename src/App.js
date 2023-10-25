@@ -1,16 +1,16 @@
 import "./styles.css";
 import React from "react";
 import package_json from "../package.json";
-import ReactRain from "./components/ReactRain";
+import Main from "./components/Main";
 
 document.body.style.margin = 0;
-document.title = "ReactRain";
+document.title = "Yotpo Review";
 
 
 window.__leonVersion = package_json.version;
 
 const App = () => (
-  <ReactRain/>
+  <Main/>
 );
 
 export default App;

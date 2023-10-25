@@ -1,5 +1,3 @@
-ReactRain.
+Yotpo Review component on PDP
 
-A weather app built in React.js
-
-by leondoes.
+by leon
