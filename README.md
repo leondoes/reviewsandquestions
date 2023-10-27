@@ -1,3 +1,3 @@
-Yotpo Review component on PDP
+Reviews & Questions component on PDP
 
-by leon
+by leondoes.
