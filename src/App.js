@@ -1,8 +1,7 @@
 import "./styles.css";
 import React from "react";
 import package_json from "../package.json";
-import ReviewsAndQuestions from "./components/ReviewsAndQuestions";
-
+import RandQ from "./components/RandQ";
 document.body.style.margin = 0;
 document.title = "Reviews & Questions";
 
@@ -10,7 +9,6 @@ document.title = "Reviews & Questions";
 window.__leonVersion = package_json.version;
 
 const App = () => (
-  <ReviewsAndQuestions/>
+  <RandQ/>
 );
-
 export default App;

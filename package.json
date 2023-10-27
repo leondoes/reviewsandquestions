@@ -1,7 +1,7 @@
 {
   "name": "reviewsandquestions",
   "version": "0.0.1",
-  "homepage": "https://leondoes.github.io/yreviewsandquestions/",
+  "homepage": "https://leondoes.github.io/reviewsandquestions/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
