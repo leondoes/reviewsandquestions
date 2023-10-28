@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { themeFont } from "../../common/theme";
 
 export const PageContainer = styled.div`
+  font-family : ${themeFont.Font};
   background-color: white;
   height: 100%;
   width: 100%;
@@ -35,19 +37,5 @@ export const PageContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  background: linear-gradient(
-    180deg,
-    rgba(15, 0, 19, 1) 0%,
-    rgba(48, 0, 60, 1) 100%
-  );
-  padding: 30px;
-
-  backdrop-filter: blur(5.2px);
-  -webkit-backdrop-filter: blur(5.2px);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 18px;
-  max-height: 90vh;
-  overflow-y: auto;
-  -webkit-box-shadow: 5px 5px 15px 5px #000000;
-  box-shadow: 5px 5px 15px 5px #000000;
+padding: 30px;
 `;
