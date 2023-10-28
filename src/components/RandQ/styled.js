@@ -13,6 +13,5 @@ export const Header = styled.div`
 export const RatingTotalsContainer = styled.div`
   display: block;
   margin: 0;
-  padding: 28px 55px;
-  background-color: #ece9e0;
+  padding-bottom: 28px;
 `;
