@@ -3,16 +3,9 @@ import { TabStyle, TabSwitchContainer } from "./styled";
 import ReviewsDisplay from "../ReviewsDisplay";
 import QuestionsDisplay from "../QuestionsDisplay";
 
-const Reviews = () => {
-  return <ReviewsDisplay/>
-};
-
-const Questions = () => {
-  return <QuestionsDisplay/>
-};
-
 const TabSwitch = () => {
   const [selectedTab, setSelectedTab] = useState("Reviews");
+  const [currentPage, setCurrentPage] = useState(1);
 
   const handleTabChange = (tab) => {
     setSelectedTab(tab);
@@ -35,8 +28,8 @@ const TabSwitch = () => {
         </TabStyle>
       </TabSwitchContainer>
 
-      {selectedTab === "Reviews" && <Reviews />}
-      {selectedTab === "Questions" && <Questions />}
+      {selectedTab === "Reviews" && <ReviewsDisplay currentPage={currentPage} setCurrentPage={setCurrentPage} />}
+      {selectedTab === "Questions" && <QuestionsDisplay />}
     </div>
   );
 };
