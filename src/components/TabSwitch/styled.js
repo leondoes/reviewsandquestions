@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const TabStyle = styled.button`
-  /* Common styles for all tabs */
   display: inline;
   margin-right: 48px;
   padding-left: 0px;
@@ -27,7 +26,6 @@ export const TabStyle = styled.button`
   cursor: pointer;
   padding-bottom: 10px;
 
-  /* Conditional border style based on isSelected */
   border-bottom: ${(props) => (props.isSelected ? "3px solid" : "none")};
 `;
 

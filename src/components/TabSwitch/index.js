@@ -5,7 +5,8 @@ import QuestionsDisplay from "../QuestionsDisplay";
 
 const TabSwitch = () => {
   const [selectedTab, setSelectedTab] = useState("Reviews");
-  const [currentPage, setCurrentPage] = useState(1);
+  const [reviewsCurrentPage, setReviewsCurrentPage] = useState(1);
+  const [questionsCurrentPage, setQuestionsCurrentPage] = useState(1);
 
   const handleTabChange = (tab) => {
     setSelectedTab(tab);
@@ -28,8 +29,20 @@ const TabSwitch = () => {
         </TabStyle>
       </TabSwitchContainer>
 
-      {selectedTab === "Reviews" && <ReviewsDisplay currentPage={currentPage} setCurrentPage={setCurrentPage} />}
-      {selectedTab === "Questions" && <QuestionsDisplay />}
+      {selectedTab === "Reviews" && (
+        <ReviewsDisplay
+          key="reviews"
+          currentPage={reviewsCurrentPage}
+          setCurrentPage={setReviewsCurrentPage}
+        />
+      )}
+      {selectedTab === "Questions" && (
+        <QuestionsDisplay
+          key="questions"
+          currentPage={questionsCurrentPage}
+          setCurrentPage={setQuestionsCurrentPage}
+        />
+      )}
     </div>
   );
 };
