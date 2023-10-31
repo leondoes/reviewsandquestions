@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 const useFetchReviews = (currentPage) => {
   const [reviews, setReviews] = useState([]);
   const [totalReviews, setTotalReviews] = useState(0);
+  const [averageScore, setAverageScore] = useState(0);
   
   const reviewsPerPage = 5;
 
@@ -34,7 +35,10 @@ const useFetchReviews = (currentPage) => {
         const responseReviews = data.response.reviews;
         if (pagination) {
           const total = pagination.total;
-          setTotalReviews(total); // Update totalReviews state with the fetched total
+          setTotalReviews(total);
+        } 
+        if (data.response.bottomline && data.response.bottomline.average_score) {
+          setAverageScore(data.response.bottomline.average_score);  // Set the average score
         }
         if (Array.isArray(responseReviews)) {
           const extractedReviews = responseReviews.map((review) => ({
@@ -51,14 +55,12 @@ const useFetchReviews = (currentPage) => {
       }
     };
 
-    fetchReviews(); // Initial fetch when the component loads
-
-    if (currentPage <= Math.ceil(totalReviews / reviewsPerPage)) {
-      fetchReviews();
+    if (currentPage <= Math.ceil(totalReviews / reviewsPerPage) || totalReviews === 0) {
+        fetchReviews();
     }
-  }, [currentPage, totalReviews]);
+  }, [currentPage, totalReviews, averageScore]);
 
-  return { reviews, totalReviews };
+  return { reviews, totalReviews, averageScore };
 }
 
 export default useFetchReviews;
