@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const AllQuestions = styled.div``;
+export const AllQuestions = styled.div`
+min-height: 800px;
+`;
 
 export const QuestionItem = styled.div`
   padding-top: 35px 0px;

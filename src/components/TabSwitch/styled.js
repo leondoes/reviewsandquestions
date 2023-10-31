@@ -32,4 +32,5 @@ export const TabStyle = styled.button`
 export const TabSwitchContainer = styled.div`
   border-bottom: 1px solid;
   background: transparent;
+  margin-bottom: -15px;
 `;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import QuestionsPagination from "../QuestionsPagination";
 import {
   AllQuestions,
@@ -13,42 +13,12 @@ import {
   AnswerLeftBorder,
   AnswerBottomBorder,
 } from "./styled";
+import useFetchQuestions from "../../hooks/useFetchQuestions";
 
 const QuestionDisplay = ({ currentPage, setCurrentPage }) => {
-  const [questions, setQuestions] = useState([]);
-  const [totalQuestions, setTotalQuestions] = useState(0);
-
   const questionsPerPage = 5;
 
-  const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    const mm = String(date.getMonth() + 1).padStart(2, "0");
-    const dd = String(date.getDate()).padStart(2, "0");
-    const yy = String(date.getFullYear()).slice(-2); // Get the last two digits of the year
-    return `${mm}/${dd}/${yy}`;
-  };
-
-  useEffect(() => {
-    const fetchQuestions = async () => {
-      try {
-        const apiUrl = `https://api.yotpo.com/v1/widget/EolV1WOLJ2UcFKuPJlrtxAIQCCoiDU7c8YqoW2pm/products/727/questions.json?page=${currentPage}`;
-        const response = await fetch(apiUrl);
-        if (!response.ok) {
-          throw Error(`Network response was not ok: ${response.status}`);
-        }
-        const data = await response.json();
-        const responseQuestions = data.response.questions;
-        if (Array.isArray(responseQuestions)) {
-          setQuestions(responseQuestions);
-          setTotalQuestions(data.response.pagination.total.questions);
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchQuestions();
-  }, [currentPage]);
+  const { questions, totalQuestions, formatDate } = useFetchQuestions(currentPage);
 
   return (
     <div>
@@ -73,14 +43,14 @@ const QuestionDisplay = ({ currentPage, setCurrentPage }) => {
             <AnswerBottomBorder/>
           </QuestionItem>
         ))}
-      </AllQuestions>
-      <QuestionsPagination
-        currentPage={currentPage}
-        totalPages={Math.ceil(totalQuestions / questionsPerPage)}
-        onPageChange={setCurrentPage}
-      />
-    </div>
-  );
-};
-
-export default QuestionDisplay;
+        </AllQuestions>
+        <QuestionsPagination
+          currentPage={currentPage}
+          totalPages={Math.ceil(totalQuestions / questionsPerPage)}
+          onPageChange={setCurrentPage}
+        />
+      </div>
+    );
+  };
+  
+  export default QuestionDisplay;
