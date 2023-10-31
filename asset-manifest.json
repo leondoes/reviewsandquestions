@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/reviewsandquestions/static/css/main.745cd932.css",
-    "main.js": "/reviewsandquestions/static/js/main.afa94037.js",
+    "main.js": "/reviewsandquestions/static/js/main.8809f909.js",
     "index.html": "/reviewsandquestions/index.html",
-    "main.afa94037.js.map": "/reviewsandquestions/static/js/main.afa94037.js.map"
+    "main.8809f909.js.map": "/reviewsandquestions/static/js/main.8809f909.js.map"
   },
   "entrypoints": [
     "static/css/main.745cd932.css",
-    "static/js/main.afa94037.js"
+    "static/js/main.8809f909.js"
   ]
 }
