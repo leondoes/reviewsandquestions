@@ -13,6 +13,7 @@ export const ReviewListItem = styled.li`
 export const AllReviews = styled.ul`
   list-style: none;
   padding: 0;
+  min-height: 800px;
 `;
 
 export const LeftColumn = styled.div`

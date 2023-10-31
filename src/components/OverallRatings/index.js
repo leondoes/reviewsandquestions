@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
   OverallContainer,
   AverageRating,
@@ -11,9 +11,11 @@ import {
 } from "./styled";
 import QuestionForm from "../QuestionForm";
 import StarRating from "../StarRating";
+import DataContext from "../../contexts/Data/DataContext";
 
 const OverallRatings = () => {
   const [questionFormVisible, setQuestionFormVisible] = useState(false);
+  const { totalReviews, totalQuestions } = useContext(DataContext);
 
   const toggleQuestionForm = () => {
     setQuestionFormVisible(!questionFormVisible);
@@ -22,9 +24,9 @@ const OverallRatings = () => {
   return (
     <OverallContainer>
       <RatingsContainer>
-        <AverageRating>
-          <>4.7 210 Reviews, 6 Q&As</>
-        </AverageRating>
+      <AverageRating>
+        <>4.7 {totalReviews} Reviews, {totalQuestions} Q&As</>
+      </AverageRating>
         <VerticalDivider />
         <StarRatingsContainer>
           <StarRating />
