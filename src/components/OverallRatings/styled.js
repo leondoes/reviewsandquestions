@@ -16,6 +16,11 @@ export const AverageRating = styled.div`
   margin: auto;
 `;
 
+export const StarAverage = styled.div`
+font-size: 20px;
+display: flex;
+`;
+
 export const StarRatingsContainer = styled.div`
   flex: 1;
   padding: 10px;

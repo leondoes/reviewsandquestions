@@ -6,10 +6,10 @@ import useFetchReviews from '../../hooks/useFetchReviews';
 
 const DataProvider = ({ children }) => {
   const { questions, totalQuestions } = useFetchQuestions(1);
-  const { reviews, totalReviews } = useFetchReviews(1);
+  const { reviews, totalReviews, averageScore } = useFetchReviews(1);
 
   return (
-    <DataContext.Provider value={{ reviews, totalReviews, questions, totalQuestions }}>
+    <DataContext.Provider value={{ reviews, totalReviews, questions, totalQuestions, averageScore }}>
       {children}
     </DataContext.Provider>
   );
