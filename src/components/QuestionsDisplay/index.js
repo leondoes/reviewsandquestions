@@ -1,5 +1,5 @@
-import React from "react";
-import QuestionsPagination from "../QuestionsPagination";
+import React, { useRef } from "react";
+import QuestionPagination from "../QuestionsPagination"
 import {
   AllQuestions,
   QuestionItem,
@@ -16,13 +16,13 @@ import {
 import useFetchQuestions from "../../hooks/useFetchQuestions";
 
 const QuestionDisplay = ({ currentPage, setCurrentPage }) => {
+  const questionsContainerRef = useRef(null);
   const questionsPerPage = 5;
-
   const { questions, totalQuestions, formatDate } = useFetchQuestions(currentPage);
 
   return (
     <div>
-      <AllQuestions>
+      <AllQuestions ref={questionsContainerRef}>
         {questions.map((question) => (
           <QuestionItem key={question.id}>
             <AskerInfo>
@@ -31,8 +31,9 @@ const QuestionDisplay = ({ currentPage, setCurrentPage }) => {
             </AskerInfo>
             <QuestionText>Q: {question.content}</QuestionText>
            
-            <AnswerContainer><AnswerLeftBorder/>
-               <AnswerInfo>
+            <AnswerContainer>
+              <AnswerLeftBorder/>
+              <AnswerInfo>
                 Mejuri
                 <AnswerDate>
                   {formatDate(question.answers[0].created_at)}
@@ -43,14 +44,15 @@ const QuestionDisplay = ({ currentPage, setCurrentPage }) => {
             <AnswerBottomBorder/>
           </QuestionItem>
         ))}
-        </AllQuestions>
-        <QuestionsPagination
-          currentPage={currentPage}
-          totalPages={Math.ceil(totalQuestions / questionsPerPage)}
-          onPageChange={setCurrentPage}
-        />
-      </div>
-    );
-  };
-  
-  export default QuestionDisplay;
+      </AllQuestions>
+      <QuestionPagination
+        currentPage={currentPage}
+        totalPages={Math.ceil(totalQuestions / questionsPerPage)}
+        onPageChange={setCurrentPage}
+        questionsContainerRef={questionsContainerRef}
+      />
+    </div>
+  );
+};
+
+export default QuestionDisplay;

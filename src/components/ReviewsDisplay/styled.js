@@ -8,12 +8,15 @@ export const ReviewListItem = styled.li`
   padding: 10px;
   border-bottom: 1px solid black;
   min-height: 120px;
+
+  &:last-child {
+    border-bottom: none;
+  }
 `;
 
 export const AllReviews = styled.ul`
   list-style: none;
   padding: 0;
-  min-height: 800px;
 `;
 
 export const LeftColumn = styled.div`
@@ -38,7 +41,8 @@ export const RightColumn = styled.div`
 `;
 
 export const Stars = styled.div`
-  font-size: 20px;
+font-family: 'yotpo-widget-font';
+  font-size: 22px;
   margin-top: -6px;
   padding-bottom: 10px;
 `;
