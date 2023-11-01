@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ReviewPagination from "../ReviewPagination";
 import {
   AllReviews,
@@ -8,11 +8,12 @@ import {
   ReviewListItem,
   Stars,
   Title,
-  Content
+  Content,
 } from "./styled";
 import useFetchReviews from "../../hooks/useFetchReviews";
 
 const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
+  const reviewsContainerRef = useRef(null);
   const { reviews, totalReviews } = useFetchReviews(currentPage);
 
   const renderStarRating = (rating) => {
@@ -32,7 +33,7 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
 
   return (
     <div>
-      <AllReviews>
+      <AllReviews ref={reviewsContainerRef}>
         {reviews.map((review, index) => (
           <ReviewListItem key={index}>
             <LeftColumn>{review.DisplayName}</LeftColumn>
@@ -60,6 +61,7 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
         currentPage={currentPage}
         totalPages={Math.ceil(totalReviews / 5)}
         onPageChange={setCurrentPage}
+        reviewsContainerRef={reviewsContainerRef}
       />
     </div>
   );

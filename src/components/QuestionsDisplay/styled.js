@@ -64,4 +64,8 @@ position: absolute;
 
 export const AnswerBottomBorder = styled.div `
 border-bottom: 2px solid #e9e9e9;
+
+${QuestionItem}:last-child & {
+    border-bottom: none;
+  }
 `;

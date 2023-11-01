@@ -1,4 +1,5 @@
 import React from 'react';
+import { StarFont } from './styled';
 
 const StarCalculator = ({ averageScore }) => {
   const fullStars = Math.floor(averageScore);
@@ -6,16 +7,16 @@ const StarCalculator = ({ averageScore }) => {
   const emptyStars = 5 - fullStars - (isHalfStar ? 1 : 0);
 
   return (
-    <div>
-      {/* Render full stars */}
-      {Array(fullStars).fill('★').map((star, idx) => <span key={idx}>{star}</span>)}
+    <StarFont>
+      {/* Render full stars using custom star Unicode */}
+      {Array(fullStars).fill('★').map((star, idx) => <span className="star" key={idx}>&#xE60E;</span>)}
 
       {/* Render half star */}
-      {isHalfStar && <span>half a star</span>}
+      {isHalfStar && <span>&#xE61A;</span>}
 
-      {/* Render empty stars */}
-      {Array(emptyStars).fill('☆').map((star, idx) => <span key={idx + fullStars}>{star}</span>)}
-    </div>
+      {/* Render empty stars (assuming you also have a custom Unicode for this) */}
+      {Array(emptyStars).fill('☆').map((star, idx) => <span className="star" key={idx + fullStars}>&#xE61B;</span>)}
+    </StarFont>
   );
 };
 
