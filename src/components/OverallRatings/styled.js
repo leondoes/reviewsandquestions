@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const OverallContainer = styled.div `
 `;
 
@@ -8,6 +9,7 @@ export const RatingsContainer = styled.div`
   background-color: #ece9e0;
   width: 100%;
   padding: 28px 0px;
+  padding-left: 24px;
 `;
 
 export const AverageRating = styled.div`
@@ -19,7 +21,7 @@ export const AverageRating = styled.div`
 export const StarAverage = styled.div`
 font-size: 20px;
 display: flex;
-align-items: center;
+gap:5px;
 `;
 
 export const StarRatingsContainer = styled.div`
@@ -72,4 +74,10 @@ export const QuestionFormContainer = styled.div`
   &.active {
     max-height: 500px;
   }
+`;
+
+export const AllTotals = styled.div`
+font-size: 16px;
+font-weight: 300;
+padding-top: 18px;
 `;

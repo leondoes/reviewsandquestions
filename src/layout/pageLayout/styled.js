@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { themeFont } from "../../common/theme";
 
 export const PageContainer = styled.div`
-  font-family : ${themeFont.Font};
+  font-family : ${themeFont.ContentFont};
   background-color: white;
   height: 100%;
   width: 100%;

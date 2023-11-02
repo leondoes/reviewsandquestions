@@ -4,6 +4,7 @@ const useFetchReviews = (currentPage) => {
   const [reviews, setReviews] = useState([]);
   const [totalReviews, setTotalReviews] = useState(0);
   const [averageScore, setAverageScore] = useState(0);
+  const [starDistribution, setStarDistribution] = useState({});
   
   const reviewsPerPage = 5;
 
@@ -38,7 +39,10 @@ const useFetchReviews = (currentPage) => {
           setTotalReviews(total);
         } 
         if (data.response.bottomline && data.response.bottomline.average_score) {
-          setAverageScore(data.response.bottomline.average_score);  // Set the average score
+          setAverageScore(data.response.bottomline.average_score);
+        }
+        if (data.response.bottomline && data.response.bottomline.star_distribution) {
+          setStarDistribution(data.response.bottomline.star_distribution);
         }
         if (Array.isArray(responseReviews)) {
           const extractedReviews = responseReviews.map((review) => ({
@@ -60,7 +64,7 @@ const useFetchReviews = (currentPage) => {
     }
   }, [currentPage, totalReviews, averageScore]);
 
-  return { reviews, totalReviews, averageScore };
+  return { reviews, totalReviews, averageScore, starDistribution }; // <-- Return starDistribution
 }
 
 export default useFetchReviews;

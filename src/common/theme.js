@@ -1,5 +1,5 @@
 //Font Selection
 
 export const themeFont = {
-    Font: "Roboto",
+    ContentFont: "'Josefin Sans', sans-serif;"
   };
