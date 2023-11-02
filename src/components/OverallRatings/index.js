@@ -6,18 +6,19 @@ import {
   StarAverage,
   AskQuestionContainer,
   AskQuestionButton,
+  AllTotals,
   VerticalDivider,
   RatingsContainer,
   QuestionFormContainer,
 } from "./styled";
 import StarCalculator from "../StarCalculator";
 import QuestionForm from "../QuestionForm";
-import StarRating from "../StarRating";
+import SortByStars from "../SortByStars";
 import DataContext from "../../contexts/Data/DataContext";
 
 const OverallRatings = () => {
   const [questionFormVisible, setQuestionFormVisible] = useState(false);
-  const { totalReviews, totalQuestions, averageScore } =
+  const { totalReviews, totalQuestions, averageScore} =
     useContext(DataContext);
 
   const toggleQuestionForm = () => {
@@ -30,16 +31,17 @@ const OverallRatings = () => {
         <AverageRating>
           <StarAverage>
             {averageScore ? averageScore.toFixed(1) : ""}
-          <StarCalculator averageScore={averageScore} /></StarAverage>
-          
-          <>
+            <StarCalculator averageScore={averageScore} />
+          </StarAverage>
+
+          <AllTotals>
             {totalReviews} Reviews, {totalQuestions} Q&As
-          </>
+          </AllTotals>
         </AverageRating>
 
         <VerticalDivider />
         <StarRatingsContainer>
-          <StarRating />
+          <SortByStars/>
         </StarRatingsContainer>
         <VerticalDivider />
         <AskQuestionContainer>

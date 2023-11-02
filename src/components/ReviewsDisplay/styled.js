@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ReviewListItem = styled.li`
   list-style: none;
@@ -17,13 +17,14 @@ export const ReviewListItem = styled.li`
 export const AllReviews = styled.ul`
   list-style: none;
   padding: 0;
+  min-height:600px;
 `;
 
 export const LeftColumn = styled.div`
   font-weight: bold;
   margin-bottom: 5px;
   display: flex;
-  align-items: center; 
+  align-items: center;
   padding-left: 32px;
 `;
 
@@ -41,21 +42,23 @@ export const RightColumn = styled.div`
 `;
 
 export const Stars = styled.div`
-font-family: 'yotpo-widget-font';
+  font-family: "yotpo-widget-font";
   font-size: 22px;
   margin-top: -6px;
   padding-bottom: 10px;
 `;
 
-export const Title = styled.div `
+export const Title = styled.div`
   font-weight: bold;
   padding-bottom: 10px;
 `;
 
-export const Content = styled.div `
-padding-bottom: 10px;
-
-button {
+export const Content = styled.div`
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
+  display: inline;
+  button {
     background: transparent;
     border: none;
     cursor: pointer;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const AllQuestions = styled.div`
+padding-top: 20px;
 min-height: 800px;
 `;
 
@@ -28,7 +29,8 @@ export const QuestionText = styled.div`
 `;
 
 export const AnswerInfo = styled.div`
-  font-size: 14px;
+  font-size: 12px;
+  color: #474747;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -36,10 +38,10 @@ export const AnswerInfo = styled.div`
 `;
 
 export const AnswerText = styled.div`
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   margin-top: 10px;
-  
+  font-weight: 400;
   padding-bottom: 35px;
   padding-left: 35px;
 `;

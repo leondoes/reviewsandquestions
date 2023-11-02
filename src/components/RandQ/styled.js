@@ -5,9 +5,8 @@ export const Header = styled.div`
   font-weight: 600;
   line-height: 38px;
   letter-spacing: 1px;
-  margin-bottom: 0px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 `;
 
 export const RatingTotalsContainer = styled.div`
