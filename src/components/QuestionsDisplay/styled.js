@@ -6,7 +6,7 @@ min-height: 800px;
 `;
 
 export const QuestionItem = styled.div`
-  padding-top: 35px 0px;
+  padding-top: 35px;
 `;
 
 export const AskerInfo = styled.div`

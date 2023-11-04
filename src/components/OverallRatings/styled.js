@@ -5,17 +5,32 @@ export const OverallContainer = styled.div `
 `;
 
 export const RatingsContainer = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
   background-color: #ece9e0;
   width: 100%;
   padding: 28px 0px;
-  padding-left: 24px;
+  align-items: center;
+
+  @media (max-width: 770px) {
+    grid-template-columns: none; // remove the grid columns
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // align to the left
+  }
 `;
 
 export const AverageRating = styled.div`
-  flex: 1;
-  padding: 10px;
-  margin: auto;
+  padding-left: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: 770px) {
+    padding-left: 20px; // adjust padding for mobile view
+    align-items: flex-start; // align to the left
+  }
 `;
 
 export const StarAverage = styled.div`
@@ -25,18 +40,28 @@ gap:5px;
 `;
 
 export const StarRatingsContainer = styled.div`
-  flex: 1;
-  padding: 10px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 770px) {
+    justify-content: flex-start; // align to the left
+    padding: 20px;
+
+  }
 `;
 
 export const AskQuestionContainer = styled.div`
-  flex: 1;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 770px) {
+    align-items: flex-start; // align to the left
+    padding-left: 20px;
+  }
 `;
 
 export const AskQuestionButton = styled.button`
@@ -64,6 +89,10 @@ export const VerticalDivider = styled.div`
   width: 1px;
   height: 70px;
   margin: auto;
+
+  @media (max-width: 770px) {
+    display: none; // Hide the dividers on small screens
+  }
 `;
 
 export const QuestionFormContainer = styled.div`
@@ -72,7 +101,7 @@ export const QuestionFormContainer = styled.div`
   transition: max-height 0.4s ease-in-out;
 
   &.active {
-    max-height: 500px;
+    max-height: 600px;
   }
 `;
 
