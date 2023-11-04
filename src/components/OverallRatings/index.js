@@ -11,6 +11,7 @@ import {
   RatingsContainer,
   QuestionFormContainer,
 } from "./styled";
+import FormComplete from "../FormComplete";
 import StarCalculator from "../StarCalculator";
 import QuestionForm from "../QuestionForm";
 import SortByStars from "../SortByStars";
@@ -18,11 +19,21 @@ import DataContext from "../../contexts/Data/DataContext";
 
 const OverallRatings = () => {
   const [questionFormVisible, setQuestionFormVisible] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const { totalReviews, totalQuestions, averageScore} =
     useContext(DataContext);
 
   const toggleQuestionForm = () => {
     setQuestionFormVisible(!questionFormVisible);
+  };
+
+  const handleFormSubmit = () => {
+    setIsSubmitted(true);
+  };
+
+  const handleFormCompleteClose = () => {
+    setIsSubmitted(false);
+    setQuestionFormVisible(false); // Ensure the question form is collapsed
   };
 
   return (
@@ -50,8 +61,12 @@ const OverallRatings = () => {
           </AskQuestionButton>
         </AskQuestionContainer>
       </RatingsContainer>
-      <QuestionFormContainer className={questionFormVisible ? "active" : ""}>
-        <QuestionForm />
+       <QuestionFormContainer className={questionFormVisible ? "active" : ""}>
+        {isSubmitted ? (
+          <FormComplete onClose={handleFormCompleteClose} />
+        ) : questionFormVisible && (
+          <QuestionForm onFormSubmit={handleFormSubmit} />
+        )}
       </QuestionFormContainer>
     </OverallContainer>
   );

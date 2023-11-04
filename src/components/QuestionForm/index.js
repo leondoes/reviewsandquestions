@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { useForm } from "react-hook-form";
 import {
   FormContainer,
+  Title,
+  SubTitle,
   StyledForm,
   StyledLabel,
   QuestionInput,
@@ -11,22 +13,35 @@ import {
   FormRow,
   BottomRow,
   LabelRow,
+  ButtonRow,
+  PostErrorMessage,
 } from "./styled";
 
-const QuestionForm = () => {
+const QuestionForm = ({ onFormSubmit }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+  
+  const [hasSubmitted, setHasSubmitted] = useState(false);
 
   const onSubmit = (data) => {
-    console.log(data);
+    setHasSubmitted(true); // Move this to the top to ensure it's set before any redirects or other operations
+    console.log("Form data:", data); // This will now only log when there are no errors
+    onFormSubmit(); // Assuming you want to submit the data regardless of validation for some reason
+  };
+  
+  const onError = (errors, e) => {
+    setHasSubmitted(true);
+    console.log("Form errors:", errors);
   };
 
   return (
     <FormContainer>
-      <StyledForm onSubmit={handleSubmit(onSubmit)}>
+      <Title>ASK A QUESTION</Title>
+      <SubTitle>* Indicates a required field</SubTitle>
+      <StyledForm onSubmit={handleSubmit(onSubmit, onError)}>
         <FormRow>
           <LabelRow>
             <StyledLabel>* Question:</StyledLabel>
@@ -74,9 +89,15 @@ const QuestionForm = () => {
             />
           </FormRow>
         </BottomRow>
-
-        <SubmitButton type="submit">POST</SubmitButton>
-      </StyledForm>
+        <ButtonRow>
+  {hasSubmitted && Object.keys(errors).length > 0 && (
+    <PostErrorMessage>
+      One or more of your answers does not meet the required criteria
+    </PostErrorMessage>
+  )}
+  <SubmitButton type="submit">POST</SubmitButton>
+</ButtonRow>
+</StyledForm>
     </FormContainer>
   );
 };

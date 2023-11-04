@@ -25,8 +25,8 @@ export const WhiteStars = styled.span`
 export const BarContainer = styled.div`
   background-color: white; 
   height: 8px; 
-  width: 100%;  // Ensure it takes up full width
-  max-width: 150px; // Adjust to the maximum width you desire for 100% rating
+  width: 100%;
+  max-width: 150px;
   margin-left: 10px; 
   display: flex;
   align-items: center;

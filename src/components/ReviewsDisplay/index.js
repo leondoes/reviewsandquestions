@@ -17,10 +17,11 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
   const { reviews, totalReviews } = useFetchReviews(currentPage);
 
   const renderStarRating = (rating) => {
-    const filledStars = "★".repeat(rating);
-    const outlineStars = "☆".repeat(5 - rating);
+    const filledStars = String.fromCharCode(0xE60E).repeat(rating);
+    const outlineStars = String.fromCharCode(0xE61B).repeat(5 - rating); // Assuming you still want to use the outline star character
     return filledStars + outlineStars;
   };
+  
 
   const [expandedContent, setExpandedContent] = useState({});
 
