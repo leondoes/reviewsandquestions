@@ -16,14 +16,13 @@ export const ReviewListItem = styled.li`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start; /* Make sure items align to the start (top) in flex mode too */
+    align-items: flex-start;
     justify-content: space-between;
     padding-left: 0;
   }
 `;
 
-
-export const LeftColumn = styled.div`
+export const NameColumn = styled.div`
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -39,7 +38,7 @@ export const LeftColumn = styled.div`
   }
 `;
 
-export const RightColumn = styled.div`
+export const DateColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -47,16 +46,16 @@ export const RightColumn = styled.div`
   padding-right: 10px;
 
   @media (max-width: 770px) {
-    order: 3; // This will ensure the date is to the far right
+    order: 3;
     padding-right: 0;
-    margin-left: auto; // This will keep the date to the right
+    margin-left: auto;
   }
 `;
 
-export const MiddleColumn = styled.div`
+export const ContentColumn = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Keep this content vertically centered */
+  justify-content: center;
 
   @media (max-width: 770px) {
     order: 1;
@@ -68,20 +67,18 @@ export const MiddleColumn = styled.div`
 export const AllReviews = styled.ul`
   list-style: none;
   padding: 0;
-  min-height: 600px;
+  min-height: 130px;
 `;
 
-
 export const Stars = styled.div`
-  font-family: 'yotpo-widget-font';
+  font-family: "yotpo-widget-font";
   font-size: 17.5px;
   margin-top: -6px;
   padding-bottom: 15px;
 
   @media (max-width: 770px) {
-    order: 1; // This should be on top
+    order: 1;
     padding-bottom: 10px;
-    // Remove grid-area since it's a grid property, not flexbox
   }
 `;
 
@@ -90,7 +87,7 @@ export const Title = styled.div`
   padding-bottom: 10px;
 
   @media (max-width: 770px) {
-    order: 2; // Title comes after stars and content
+    order: 2;
     font-size: 14px;
   }
 `;
@@ -108,7 +105,21 @@ export const Content = styled.div`
   }
 
   @media (max-width: 770px) {
-    order: 2; // Content comes after stars
+    order: 2;
     font-size: 14px;
   }
+`;
+
+export const NoReviewsMessage = styled.div`
+  text-align: center;
+  padding: 35px;
+  font-size: 14px;
+`;
+
+export const LoadingContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 `;

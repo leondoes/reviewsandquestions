@@ -10,7 +10,7 @@ export const PageContainer = styled.div`
   display: grid;
   grid-template-columns:
     1fr
-    min(140ch, 100%)
+    min(1250px, 100%)
     1fr;
   > * {
     grid-column: 2;

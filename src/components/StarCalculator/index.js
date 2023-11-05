@@ -1,21 +1,35 @@
-import React from 'react';
-import { StarFont } from './styled';
+import React from "react";
+import { StarFont } from "./styled";
 
 const StarCalculator = ({ averageScore }) => {
-  const fullStars = Math.floor(averageScore);
-  const isHalfStar = (averageScore - fullStars) >= 0.5;
-  const emptyStars = 5 - fullStars - (isHalfStar ? 1 : 0);
+  const hasScore = averageScore > 0;
+  const fullStars = hasScore ? Math.floor(averageScore) : 0;
+  const isHalfStar = hasScore && averageScore - fullStars >= 0.5;
+  const emptyStars = hasScore ? 5 - fullStars - (isHalfStar ? 1 : 0) : 5;
 
   return (
     <StarFont>
-      {/* Render full stars using custom star Unicode */}
-      {Array(fullStars).fill('★').map((star, idx) => <span className="star" key={idx}>&#xE60E;</span>)}
+      {Array(fullStars)
+        .fill("★")
+        .map((star, idx) => (
+          <span className="star" key={"full" + idx}>
+            &#xE60E;
+          </span>
+        ))}
 
-      {/* Render half star */}
-      {isHalfStar && <span>&#xE61A;</span>}
+      {isHalfStar && (
+        <span className="star" key={"half"}>
+          &#xE61A;
+        </span>
+      )}
 
-      {/* Render empty stars (assuming you also have a custom Unicode for this) */}
-      {Array(emptyStars).fill('☆').map((star, idx) => <span className="star" key={idx + fullStars}>&#xE61B;</span>)}
+      {Array(emptyStars)
+        .fill("☆")
+        .map((star, idx) => (
+          <span className="star" key={"empty" + idx}>
+            &#xE61B;
+          </span>
+        ))}
     </StarFont>
   );
 };

@@ -2,26 +2,27 @@ import React, { useState, useRef } from "react";
 import ReviewPagination from "../ReviewPagination";
 import {
   AllReviews,
-  LeftColumn,
-  MiddleColumn,
-  RightColumn,
+  NameColumn,
+  ContentColumn,
+  DateColumn,
   ReviewListItem,
   Stars,
   Title,
   Content,
+  NoReviewsMessage,
+  LoadingContainer,
 } from "./styled";
 import useFetchReviews from "../../hooks/useFetchReviews";
 
 const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
   const reviewsContainerRef = useRef(null);
-  const { reviews, totalReviews } = useFetchReviews(currentPage);
+  const { reviews, totalReviews, isLoading } = useFetchReviews(currentPage); // Extract isLoading
 
   const renderStarRating = (rating) => {
-    const filledStars = String.fromCharCode(0xE60E).repeat(rating);
-    const outlineStars = String.fromCharCode(0xE61B).repeat(5 - rating); // Assuming you still want to use the outline star character
-    return filledStars + outlineStars;
+    const filledStars = String.fromCharCode(0xe60e).repeat(rating);
+    const emptyStars = String.fromCharCode(0xe61b).repeat(5 - rating);
+    return filledStars + emptyStars;
   };
-  
 
   const [expandedContent, setExpandedContent] = useState({});
 
@@ -34,36 +35,49 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
 
   return (
     <div>
-      <AllReviews ref={reviewsContainerRef}>
-        {reviews.map((review, index) => (
-          <ReviewListItem key={index}>
-            <LeftColumn>{review.DisplayName}</LeftColumn>
-            <MiddleColumn>
-              <Stars>{renderStarRating(review.starRating)}</Stars>
-              <Title>{review.reviewTitle}</Title>
-              <Content>
-                {review.reviewText.length > 400
-                  ? expandedContent[index]
-                    ? review.reviewText
-                    : `${review.reviewText.slice(0, 400)}... `
-                  : review.reviewText}
-                {review.reviewText.length > 400 && (
-                  <button onClick={() => handleExpandContent(index)}>
-                    {expandedContent[index] ? "Read Less" : "Read More"}
-                  </button>
-                )}
-              </Content>
-            </MiddleColumn>
-            <RightColumn>{review.reviewDate}</RightColumn>
-          </ReviewListItem>
-        ))}
-      </AllReviews>
-      <ReviewPagination
-        currentPage={currentPage}
-        totalPages={Math.ceil(totalReviews / 5)}
-        onPageChange={setCurrentPage}
-        reviewsContainerRef={reviewsContainerRef}
-      />
+      {isLoading ? (
+        <LoadingContainer>Loading reviews...</LoadingContainer>
+      ) : (
+        <AllReviews ref={reviewsContainerRef}>
+          {totalReviews > 0 ? (
+            reviews.map((review, index) => (
+              <ReviewListItem key={index}>
+                <NameColumn>{review.displayName}</NameColumn>
+                <ContentColumn>
+                  <Stars>{renderStarRating(review.starRating)}</Stars>
+                  <Title>{review.reviewTitle}</Title>
+                  <Content>
+                    {review.reviewText.length > 400
+                      ? expandedContent[index]
+                        ? review.reviewText
+                        : `${review.reviewText.slice(0, 400)}... `
+                      : review.reviewText}
+                    {review.reviewText.length > 400 && (
+                      <button onClick={() => handleExpandContent(index)}>
+                        {expandedContent[index] ? "Read Less" : "Read More"}
+                      </button>
+                    )}
+                  </Content>
+                </ContentColumn>
+                <DateColumn>{review.reviewDate}</DateColumn>
+              </ReviewListItem>
+            ))
+          ) : (
+            <NoReviewsMessage>
+              Currently, there are no reviews for this product.
+            </NoReviewsMessage>
+          )}
+        </AllReviews>
+      )}
+      {!isLoading &&
+        totalReviews > 0 && (
+          <ReviewPagination
+            currentPage={currentPage}
+            totalPages={Math.ceil(totalReviews / 5)}
+            onPageChange={setCurrentPage}
+            reviewsContainerRef={reviewsContainerRef}
+          />
+        )}
     </div>
   );
 };

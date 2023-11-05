@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-import { themeFont } from '../../common/theme';
-
+import styled from "styled-components";
+import { themeFont } from "../../common/theme";
 
 export const PaginationContainer = styled.div`
   display: flex;
@@ -23,5 +22,5 @@ font-family: ${themeFont.ContentFont}
 
 export const ActiveButton = styled(PageButton)`
   font-weight: bold;
-  text-decoration:underline;
+  text-decoration: underline;
 `;
