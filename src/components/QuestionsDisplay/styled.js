@@ -9,7 +9,9 @@ export const AllQuestions = styled.div`
   min-height: 130px;
 `;
 
-export const QuestionItem = styled.div``;
+export const QuestionItem = styled.div`
+width: 100%;
+`;
 
 export const AskerInfo = styled.div`
   padding-top: 30px;
