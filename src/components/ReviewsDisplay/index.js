@@ -70,7 +70,7 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
         </AllReviews>
       )}
       {!isLoading &&
-        totalReviews > 0 && ( // Pagination should not show when loading
+        totalReviews > 0 && (
           <ReviewPagination
             currentPage={currentPage}
             totalPages={Math.ceil(totalReviews / 5)}
