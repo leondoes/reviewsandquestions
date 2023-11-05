@@ -1,20 +1,21 @@
-import React from 'react';
-import {
-  PaginationContainer,
-  PageButton,
-  ActiveButton,
-} from "./styled";
+import React from "react";
+import { PaginationContainer, PageButton, ActiveButton } from "./styled";
 
-const QuestionPagination = ({ currentPage, totalPages, onPageChange, questionsContainerRef }) => {
+const QuestionPagination = ({
+  currentPage,
+  totalPages,
+  onPageChange,
+  questionsContainerRef,
+}) => {
   const handlePageChange = (newPage) => {
     if (questionsContainerRef && questionsContainerRef.current) {
-      questionsContainerRef.current.scrollIntoView({ behavior: 'smooth' });
+      questionsContainerRef.current.scrollIntoView({ behavior: "smooth" });
     }
     onPageChange(newPage);
   };
 
   const pageNumbers = [];
-  const maxVisiblePages = 9;
+  const maxVisiblePages = 5;
 
   const addPageNumber = (pageNumber) => {
     if (pageNumber > 0 && pageNumber <= totalPages) {

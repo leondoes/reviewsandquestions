@@ -1,6 +1,6 @@
 {
   "name": "reviewsandquestions",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://leondoes.github.io/reviewsandquestions/",
   "private": true,
   "dependencies": {
@@ -11,6 +11,7 @@
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
     "react-hook-form": "^7.47.0",
+    "react-query": "^3.39.3",
     "react-router-dom": "^6.4.5",
     "react-scripts": "^5.0.1",
     "styled-components": "^5.3.11",

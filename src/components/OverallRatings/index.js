@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import {
   OverallContainer,
   AverageRating,
@@ -17,14 +17,13 @@ import QuestionForm from "../QuestionForm";
 import SortByStars from "../SortByStars";
 import DataContext from "../../contexts/Data/DataContext";
 
-const OverallRatings = () => {
-  const [questionFormVisible, setQuestionFormVisible] = useState(false);
+const OverallRatings = ({ isQuestionFormVisible, onAskQuestionClick }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const { totalReviews, totalQuestions, averageScore} =
+  const { totalReviews, totalQuestions, averageScore } =
     useContext(DataContext);
 
-  const toggleQuestionForm = () => {
-    setQuestionFormVisible(!questionFormVisible);
+  const handleAskQuestionClick = () => {
+    onAskQuestionClick();
   };
 
   const handleFormSubmit = () => {
@@ -33,8 +32,15 @@ const OverallRatings = () => {
 
   const handleFormCompleteClose = () => {
     setIsSubmitted(false);
-    setQuestionFormVisible(false); // Ensure the question form is collapsed
+
+    onAskQuestionClick();
   };
+
+  useEffect(() => {
+    if (!isQuestionFormVisible) {
+      setIsSubmitted(false);
+    }
+  }, [isQuestionFormVisible]);
 
   return (
     <OverallContainer>
@@ -42,30 +48,34 @@ const OverallRatings = () => {
         <AverageRating>
           <StarAverage>
             {averageScore ? averageScore.toFixed(1) : ""}
-            <StarCalculator averageScore={averageScore} />
+            <StarCalculator averageScore={averageScore || 0} />
           </StarAverage>
 
           <AllTotals>
-            {totalReviews} Reviews, {totalQuestions} Q&As
+            {totalReviews ? `${totalReviews} Reviews` : "0 Reviews"}
+            {totalQuestions > 0 && `, ${totalQuestions} Q&As`}
           </AllTotals>
         </AverageRating>
-
-        <VerticalDivider />
-        <StarRatingsContainer>
-          <SortByStars/>
+        <VerticalDivider totalReviews={totalReviews} />
+        <StarRatingsContainer totalReviews={totalReviews}>
+          <SortByStars />
         </StarRatingsContainer>
-        <VerticalDivider />
+        <VerticalDivider totalReviews={totalReviews} />
+
         <AskQuestionContainer>
-          <AskQuestionButton onClick={toggleQuestionForm}>
+          <AskQuestionButton onClick={handleAskQuestionClick}>
             Ask a Question
           </AskQuestionButton>
         </AskQuestionContainer>
       </RatingsContainer>
-       <QuestionFormContainer className={questionFormVisible ? "active" : ""}>
+
+      <QuestionFormContainer className={isQuestionFormVisible ? "active" : ""}>
         {isSubmitted ? (
           <FormComplete onClose={handleFormCompleteClose} />
-        ) : questionFormVisible && (
-          <QuestionForm onFormSubmit={handleFormSubmit} />
+        ) : (
+          isQuestionFormVisible && (
+            <QuestionForm onFormSubmit={handleFormSubmit} />
+          )
         )}
       </QuestionFormContainer>
     </OverallContainer>

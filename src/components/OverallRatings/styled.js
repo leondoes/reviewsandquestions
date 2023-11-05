@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-
-export const OverallContainer = styled.div `
-`;
+export const OverallContainer = styled.div``;
 
 export const RatingsContainer = styled.div`
   display: grid;
@@ -13,10 +11,10 @@ export const RatingsContainer = styled.div`
   align-items: center;
 
   @media (max-width: 770px) {
-    grid-template-columns: none; // remove the grid columns
+    grid-template-columns: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; // align to the left
+    align-items: flex-start;
   }
 `;
 
@@ -28,26 +26,28 @@ export const AverageRating = styled.div`
   align-items: flex-start;
 
   @media (max-width: 770px) {
-    padding-left: 20px; // adjust padding for mobile view
-    align-items: flex-start; // align to the left
+    padding-left: 20px;
+    align-items: flex-start;
   }
 `;
 
 export const StarAverage = styled.div`
-font-size: 20px;
-display: flex;
-gap:5px;
+  font-size: 20px;
+  display: flex;
+  gap: 5px;
 `;
 
 export const StarRatingsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: ${({ totalReviews }) =>
+    totalReviews > 0 ? "visible" : "hidden"};
 
+  // Hide if no reviews and below 770px screen width
   @media (max-width: 770px) {
-    justify-content: flex-start; // align to the left
-    padding: 20px;
-
+    display: ${({ totalReviews }) => (totalReviews > 0 ? "flex" : "none")};
+    padding-left: 20px;
   }
 `;
 
@@ -56,10 +56,9 @@ export const AskQuestionContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   @media (max-width: 770px) {
-    align-items: flex-start; // align to the left
+    align-items: flex-start;
     padding-left: 20px;
   }
 `;
@@ -71,7 +70,8 @@ export const AskQuestionButton = styled.button`
   font-weight: 500;
   letter-spacing: 1px;
   height: 40px;
-  width: auto;
+  min-width: 150px;
+  margin: auto;
   min-height: auto;
   transition: all 0.3s ease;
   letter-spacing: 1px;
@@ -89,16 +89,20 @@ export const VerticalDivider = styled.div`
   width: 1px;
   height: 70px;
   margin: auto;
+  visibility: ${({ totalReviews }) =>
+    totalReviews > 0 ? "visible" : "hidden"};
 
+  // Hide if no reviews and below 770px screen width
   @media (max-width: 770px) {
-    display: none; // Hide the dividers on small screens
+    display: ${({ totalReviews }) => (totalReviews > 0 ? "block" : "none")};
+    display: none;
   }
 `;
 
 export const QuestionFormContainer = styled.div`
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out;
+  transition: max-height 1s ease-in-out;
 
   &.active {
     max-height: 600px;
@@ -106,7 +110,7 @@ export const QuestionFormContainer = styled.div`
 `;
 
 export const AllTotals = styled.div`
-font-size: 16px;
-font-weight: 300;
-padding-top: 18px;
+  font-size: 16px;
+  font-weight: 300;
+  padding-top: 18px;
 `;

@@ -48,7 +48,7 @@ export const LabelRow = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
-  position: relative; /* Add position relative here */
+  position: relative;
 `;
 
 export const BottomRow = styled.div`
@@ -82,7 +82,7 @@ export const StyledInput = styled.input`
   border: 1px solid black;
   caret-color: #898989;
   margin-top: 10px;
-  box-sizing: border-box; // Added based on the CSS rule
+  box-sizing: border-box;
 
   &:focus {
     outline: none;
@@ -113,7 +113,8 @@ export const QuestionInput = styled.textarea`
 `;
 
 export const SubmitButton = styled.button`
-  box-sizing: border-box; // Make sure padding and border are inside the box
+  color: #000000 !important;
+  box-sizing: border-box;
   border: 1px solid black;
   background: none;
   padding: 12px 24px;
@@ -136,7 +137,6 @@ export const SubmitButton = styled.button`
   }
 `;
 
-
 export const ErrorMessage = styled.span`
   margin: 0;
   padding: 0;
@@ -148,13 +148,13 @@ export const ErrorMessage = styled.span`
 
 export const ButtonRow = styled.div`
   display: flex;
-  justify-content: flex-end; /* This will push the error message to the left and the button to the right */
-  width: 100%; /* Ensure it takes full width to allow space-between to work */
+  justify-content: flex-end;
+  width: 100%;
   gap: 20px;
 `;
 
 export const PostErrorMessage = styled.span`
   color: red;
   font-size: 14px;
-  align-self: flex-start; /* Aligns the error message to the left */
+  align-self: flex-start;
 `;
