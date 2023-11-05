@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
-
 @font-face {
-    font-family: 'Yotpo-Widget-Font'; 
-    src: 
-         url('./Assets/fonts/yotpo-widget-font.eot'),
-         url('./Assets/fonts/yotpo-widget-font.svg#yotpo-widget-font') format('svg'),
-         url('./Assets/fonts/yotpo-widget-font.ttf') format('truetype'),
-         url('./Assets/fonts/yotpo-widget-font.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+     font-family: 'Yotpo-Widget-Font'; 
+     src: 
+          url('./Assets/fonts/yotpo-widget-font.svg#yotpo-widget-font') format('svg'),
+          url('./Assets/fonts/yotpo-widget-font.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
