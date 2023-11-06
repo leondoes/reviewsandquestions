@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { PaginationContainer, PageButton, ActiveButton } from "./styled";
 
 const ReviewPagination = ({
@@ -7,6 +7,24 @@ const ReviewPagination = ({
   onPageChange,
   reviewsContainerRef,
 }) => {
+  const [maxVisiblePages, setMaxVisiblePages] = useState(
+    window.innerWidth > 770 ? 9 : 5
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMaxVisiblePages(window.innerWidth > 770 ? 9 : 5);
+    };
+
+    // Set up event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up event listener
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const handlePageChange = (newPage) => {
     if (reviewsContainerRef && reviewsContainerRef.current) {
       reviewsContainerRef.current.scrollIntoView({ behavior: "smooth" });
@@ -15,7 +33,6 @@ const ReviewPagination = ({
   };
 
   const pageNumbers = [];
-  const maxVisiblePages = 5;
 
   const addPageNumber = (pageNumber) => {
     if (pageNumber > 0 && pageNumber <= totalPages) {
@@ -24,11 +41,11 @@ const ReviewPagination = ({
   };
 
   let startPage = currentPage - Math.floor(maxVisiblePages / 2);
-  if (startPage < 1) {
-    startPage = 1;
-  }
+  startPage = Math.max(startPage, 1);
+  let endPage = startPage + maxVisiblePages - 1;
+  endPage = Math.min(endPage, totalPages);
 
-  for (let i = startPage; i < startPage + maxVisiblePages; i++) {
+  for (let i = startPage; i <= endPage; i++) {
     addPageNumber(i);
   }
 

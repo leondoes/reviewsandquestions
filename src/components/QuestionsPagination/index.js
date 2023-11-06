@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { PaginationContainer, PageButton, ActiveButton } from "./styled";
 
 const QuestionPagination = ({
@@ -7,6 +7,25 @@ const QuestionPagination = ({
   onPageChange,
   questionsContainerRef,
 }) => {
+  // Initialize state with the appropriate value based on the current window width
+  const [maxVisiblePages, setMaxVisiblePages] = useState(
+    window.innerWidth > 770 ? 9 : 5
+  );
+
+  // Effect to adjust `maxVisiblePages` on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setMaxVisiblePages(window.innerWidth > 770 ? 9 : 5);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const handlePageChange = (newPage) => {
     if (questionsContainerRef && questionsContainerRef.current) {
       questionsContainerRef.current.scrollIntoView({ behavior: "smooth" });
@@ -15,7 +34,6 @@ const QuestionPagination = ({
   };
 
   const pageNumbers = [];
-  const maxVisiblePages = 5;
 
   const addPageNumber = (pageNumber) => {
     if (pageNumber > 0 && pageNumber <= totalPages) {
@@ -23,12 +41,16 @@ const QuestionPagination = ({
     }
   };
 
+  // Calculate the start page for pagination
   let startPage = currentPage - Math.floor(maxVisiblePages / 2);
-  if (startPage < 1) {
-    startPage = 1;
-  }
+  startPage = Math.max(startPage, 1);
 
-  for (let i = startPage; i < startPage + maxVisiblePages; i++) {
+  // Calculate the end page for pagination
+  let endPage = startPage + maxVisiblePages - 1;
+  endPage = Math.min(endPage, totalPages);
+
+  // Add page numbers for the calculated range
+  for (let i = startPage; i <= endPage; i++) {
     addPageNumber(i);
   }
 
