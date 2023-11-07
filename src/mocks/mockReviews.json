@@ -1,0 +1,1725 @@
+{
+  "page1": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 1,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {
+        "521488502": {
+          "product_url": "https://yotpo.com/go/winmRCYP",
+          "product_name": "Single Mini Hoop White Gold - 14k White Gold"
+        },
+        "521676391": {
+          "product_url": "https://yotpo.com/go/winmRCYP",
+          "product_name": "Single Mini Hoop White Gold - 14k White Gold"
+        }
+      },
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 521803315,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "The quality is very good",
+          "title": "The quality is very good",
+          "created_at": "2023-11-07T04:13:11.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.90433,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 90521293,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Sura K."
+          }
+        },
+        {
+          "id": 521676391,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Perfect daily earring",
+          "title": "Perfect daily earring",
+          "created_at": "2023-11-06T23:36:20.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.973155,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 78154497,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Catherine P."
+          }
+        },
+        {
+          "id": 521638745,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Great hoop! looks really nice and stays in well",
+          "title": "Beautiful simple hoop",
+          "created_at": "2023-11-06T20:38:00.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.984417,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 55345241,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Avery S."
+          }
+        },
+        {
+          "id": 521581385,
+          "score": 4,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Pretty good value for cost but clasp is bent easily over time",
+          "title": "Pretty good value for cost",
+          "created_at": "2023-11-06T17:58:37.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.0879352,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 74870495,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Ginny B."
+          }
+        },
+        {
+          "id": 521488502,
+          "score": 4,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "A nice little addition to your earring collection. Although, and maybe it&#x27;s b/c my earlobes are a bit big, the earring has bent a bit, and it&#x27;s a bit difficult at times to put in and close. But overall, I like it!",
+          "title": "A nice little earring",
+          "created_at": "2023-11-06T07:24:18.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.782919,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 56751553,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Chris H."
+          }
+        }
+      ]
+    }
+  },
+  "page2": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 2,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {
+        "519994337": {
+          "product_url": "https://yotpo.com/go/winmRCYP",
+          "product_name": "Single Mini Hoop White Gold - 14k White Gold"
+        },
+        "521132193": {
+          "product_url": "https://yotpo.com/go/winmRCYP",
+          "product_name": "Single Mini Hoop White Gold - 14k White Gold"
+        }
+      },
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 521345236,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "My everyday staple that doesn’t poke behind my ears and withstands swimming, surfing, and sweating.",
+          "title": "My everyday staple that doesn’t",
+          "created_at": "2023-11-04T23:10:26.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.966965,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 17769372,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Heather H."
+          }
+        },
+        {
+          "id": 521132193,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "This hoop is beautiful in its simplicity. Looks great in the ear’s first or second hole. I love the white gold!",
+          "title": "Perfect Tiny Hoop",
+          "created_at": "2023-11-04T01:15:18.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.992324,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89201376,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Heather D."
+          }
+        },
+        {
+          "id": 521069070,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Good qualify",
+          "title": "Great hoppe",
+          "created_at": "2023-11-03T22:01:32.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.938379,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 87674573,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Sama A."
+          }
+        },
+        {
+          "id": 520068640,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I had a plated hoop i bought off etsy in my cartilage for about a year and eventually it tarnished and my ear became soooo swollen. i bought this hoop and within a week my ear had returned to its normal size with no pain or discomfort!",
+          "title": "super cute and comfortable!",
+          "created_at": "2023-11-03T03:55:44.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.863705,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 51516487,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Annika H."
+          }
+        },
+        {
+          "id": 519994337,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Love the hoops and how easy it is to keep up with my active lifestyle.",
+          "title": "So pretty!",
+          "created_at": "2023-11-02T16:48:12.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.979085,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 6037450,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Amiga F."
+          }
+        }
+      ]
+    }
+  },
+  "page3": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 3,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {
+        "517875831": {
+          "product_url": "https://yotpo.com/go/winmRCYP",
+          "product_name": "Single Mini Hoop White Gold - 14k White Gold"
+        }
+      },
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 519989170,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Simple and pretty earrings I wear at all times, no tarnish and very secure.",
+          "title": "Great earrings",
+          "created_at": "2023-11-02T16:11:19.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.980047,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 28852817,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Tristan K."
+          }
+        },
+        {
+          "id": 519348135,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I’ve had several hoops for this cartilage piercing and so many have tarnished or irritated my ear. This hoop was perfect and super easy to get on. I shower/swim in it and keep it in 24/7. Great quality and would buy again!",
+          "title": "Perfect cartilage hoop",
+          "created_at": "2023-11-01T02:23:00.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.99214,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 28599475,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Lorraine T."
+          }
+        },
+        {
+          "id": 519255479,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I have ordered these in a pair of two, three separate times as I use them daily. They are comfortable to sleep in and do not discolor under water as well.",
+          "title": "3rd time reordering.",
+          "created_at": "2023-10-31T17:25:58.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.926123,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 90321665,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Kayla J."
+          }
+        },
+        {
+          "id": 518863522,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Was looking for something like this for my cartilage piercing, perfect size",
+          "title": "Perfect for a cartilage piercing",
+          "created_at": "2023-10-30T02:24:43.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.981547,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 33772358,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Cheryl H."
+          }
+        },
+        {
+          "id": 517875831,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Perfect mini hoop",
+          "title": "Perfect mini hoop",
+          "created_at": "2023-10-29T14:18:20.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.976699,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 90249405,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Tyler P."
+          }
+        }
+      ]
+    }
+  },
+  "page4": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 4,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {},
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 517863752,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Exactly what I was looking for and such a great price for 14k. I will shopping here again.",
+          "title": "First Purchase",
+          "created_at": "2023-10-29T11:21:03.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.98061,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 90246045,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Emma P."
+          }
+        },
+        {
+          "id": 517841750,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "This is literally the best little hoop! I bought two for both my second holes and they are literally perfectttt!!",
+          "title": "Obsessed",
+          "created_at": "2023-10-29T03:58:53.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.987837,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 90240949,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Sarah K."
+          }
+        },
+        {
+          "id": 517815916,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "So delicate and pretty!",
+          "title": "Love it",
+          "created_at": "2023-10-28T19:56:38.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.978322,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": false,
+          "user": {
+            "user_id": 90234751,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Cindy H."
+          }
+        },
+        {
+          "id": 517812693,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I really love my 14k Yellow Gold Mini Hoop. It&#x27;s so minimalistic and cute for my second ear piercing",
+          "title": "Just perfect",
+          "created_at": "2023-10-28T18:56:54.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.989755,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 78259897,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Anna S."
+          }
+        },
+        {
+          "id": 517746847,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Great quality and perfect to wear everyday.",
+          "title": "great everyday piece",
+          "created_at": "2023-10-28T01:23:45.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.987645,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 23130321,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Jessica B."
+          }
+        }
+      ]
+    }
+  },
+  "page5": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 5,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {
+        "516557724": {
+          "product_url": "https://yotpo.com/go/winmRCYP",
+          "product_name": "Single Mini Hoop White Gold - 14k White Gold"
+        }
+      },
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 517030327,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Exactly what I was looking for! Quality product.",
+          "title": "Excellent purchase!",
+          "created_at": "2023-10-26T13:39:44.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.98535,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 68854041,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Alexis G."
+          }
+        },
+        {
+          "id": 516727911,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Goes with everything",
+          "title": "Perfect as a second esrring",
+          "created_at": "2023-10-25T23:49:52.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.988824,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 90142131,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Luisa V."
+          }
+        },
+        {
+          "id": 516557724,
+          "score": 4,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I bought two to have as a matching set and they’re perfect. If you’re looking for a simple hoop that fits nicely on the ear these are it! Also they have not budged or fallen out :)",
+          "title": "Love these!",
+          "created_at": "2023-10-25T13:24:17.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.991293,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 50987067,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Nina S."
+          }
+        },
+        {
+          "id": 516556726,
+          "score": 4,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Just wish it were slightly smaller for my tragus piercing. But very high quality and lays nicely so it doesn’t interfere with sleeping, etc. Love Mejuri jewelry!",
+          "title": "Beautiful hoop",
+          "created_at": "2023-10-25T13:16:46.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.965696,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 90127914,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Amy C."
+          }
+        },
+        {
+          "id": 515310784,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Beautiful hoops. Perfect for everyday.",
+          "title": "Beautiful hoops. Perfect for everyday.",
+          "created_at": "2023-10-23T12:32:43.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.964179,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 16448622,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Liza S."
+          }
+        }
+      ]
+    }
+  },
+  "page6": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 6,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {},
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 514767550,
+          "score": 3,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Ma fille avait perdu un anneau et j’ai acheté celui-ci en remplacement, ce n’est pas le même model et il s’ouvre constamment et se déforme facilement. Qualité décevante, je ne recommande pas",
+          "title": "Décevant",
+          "created_at": "2023-10-22T11:23:33.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.0302281,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 11192067,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Chantale P."
+          }
+        },
+        {
+          "id": 514744011,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "i lost my helix piercing whilst in vancouver, and i needed to find a new one. the team at mejuri were so lovely and attentive in helping me find what i needed, and even took the time to help me put my new piercing in! it&#x27;s so lovely and i think will be an earring that remains in my stack for many many years to come!",
+          "title": "cartilage hoop",
+          "created_at": "2023-10-22T04:57:20.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.840459,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 90014491,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Emily A."
+          }
+        },
+        {
+          "id": 514689744,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Love them!",
+          "title": "Beautiful little mini hoops",
+          "created_at": "2023-10-21T14:48:27.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.982962,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 38851249,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Gigi R."
+          }
+        },
+        {
+          "id": 514563056,
+          "score": 3,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "One clasp is really hard to open other one is too loose",
+          "title": "Mini hoop",
+          "created_at": "2023-10-20T14:00:58.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.0527218,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 81127661,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Homaira S."
+          }
+        },
+        {
+          "id": 514440814,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Absolutely love these. I bought 2 and they’re so small and cute.",
+          "title": "My fave earrings",
+          "created_at": "2023-10-20T07:04:07.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.98442,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 1535465,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Maria E."
+          }
+        }
+      ]
+    }
+  },
+  "page7": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 7,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {},
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 514322577,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I&#x27;ve been searching for an easy hoop thats small enough for my ear - this is perfect! I sleep and shower with it on and its held up great. I love that they sell singles too.",
+          "title": "Best small hoops!",
+          "created_at": "2023-10-19T14:33:53.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.989123,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89939431,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Kacie D."
+          }
+        },
+        {
+          "id": 514197909,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Bought two of these for my 10yo daughter&#x27;s birthday. They fit great and I love that they can be worn 24/7. I even have a pair myself.",
+          "title": "Perfect for little ears",
+          "created_at": "2023-10-19T07:30:05.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.992138,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89922439,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Frankie A."
+          }
+        },
+        {
+          "id": 514120114,
+          "score": 4,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I’d give it five stars but it took fifteen hail Mary&#x27;s, ten people, and two working days to clip it in place. In all honesty they’re gonna bury me in it, it is never coming off. Oh, and if you have long nails…good luck",
+          "title": "Fantastic but hard to clip",
+          "created_at": "2023-10-19T02:07:35.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.261678,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 61659747,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Aleksandra P."
+          }
+        },
+        {
+          "id": 513425583,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Exactly what a wanted. Something small that I could wear all the time.",
+          "title": "Love!",
+          "created_at": "2023-10-17T12:11:01.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.982215,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 26985593,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Deanne S."
+          }
+        },
+        {
+          "id": 513404282,
+          "score": 4,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "It’s a great size and great quality, it is slightly irritating my ear",
+          "title": "Nice earring",
+          "created_at": "2023-10-17T10:36:07.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.955442,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89848680,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Madison B."
+          }
+        }
+      ]
+    }
+  },
+  "page8": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 8,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {},
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 512843709,
+          "score": 4,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Both twice no regrets",
+          "title": "Both twice no regrets",
+          "created_at": "2023-10-16T19:34:33.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.887926,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89828944,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Paula S."
+          }
+        },
+        {
+          "id": 512585031,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "It’s perfect to wear it everyday and super comfortable to sleep in. It’s a classic piece!",
+          "title": "Comfortable Huggies",
+          "created_at": "2023-10-16T03:46:31.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.981689,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 54391643,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Momoko H."
+          }
+        },
+        {
+          "id": 512583713,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Well made and very easy to get in cartilage piercing",
+          "title": "Cartilage Hoop",
+          "created_at": "2023-10-16T03:15:49.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.896532,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 74274431,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Nedda S."
+          }
+        },
+        {
+          "id": 512411990,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Keep these in all day, even when showering, and they still look brand new. Love them!",
+          "title": "Great Staple",
+          "created_at": "2023-10-14T19:15:32.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.975559,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 72074348,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Holli K."
+          }
+        },
+        {
+          "id": 512343201,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I wear them every day &lt;3",
+          "title": "Perfect !!",
+          "created_at": "2023-10-13T23:30:04.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.99114,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89768958,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Margareth H."
+          }
+        }
+      ]
+    }
+  },
+  "page9": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 9,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {
+        "512067420": {
+          "product_url": "https://yotpo.com/go/winmRCYP",
+          "product_name": "Single Mini Hoop White Gold - 14k White Gold"
+        }
+      },
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 512072178,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Exactly what I was looking for - perfect size, comfortable to sleep in, and solid gold so no irritation or discoloration.",
+          "title": "Single golf hoop for cartilage piercing",
+          "created_at": "2023-10-13T14:01:19.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.978885,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89757037,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Alison J."
+          }
+        },
+        {
+          "id": 512067420,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Loveeeee!! Great little addition to my ear stack",
+          "title": "Loveeeee!! Great little addition to",
+          "created_at": "2023-10-13T13:29:57.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.985562,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89756350,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Kat S."
+          }
+        },
+        {
+          "id": 512052729,
+          "score": 1,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Poorly designed",
+          "title": "Lost one side within a week",
+          "created_at": "2023-10-13T11:14:24.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.00935132,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 52518854,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Jihyun J."
+          },
+          "comment": {
+            "id": 32352669,
+            "content": "Hi Jihyun, thank you for reaching out. We&#x27;re sorry to hear about your earring. While our lost pieces policy is set in place to maintain fairness with all of our customers, we understand your disappointment and the feedback from your experience has been noted and shared. That said, our Customer Experience Team is always here to chat and can be reached directly via email at contact@mejuri.com.",
+            "created_at": "2023-10-13T17:55:30.000Z",
+            "display_name": "Mejuri"
+          }
+        },
+        {
+          "id": 512045264,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I previously ordered the huggie hoops. They were beautiful but there was a small gap between the hoop and my earlobe. I returned for these and they are perfect &#x27;wear all the time&#x27; hoops. Very happy!",
+          "title": "Perfect &#x27;huggie&#x27; hoop",
+          "created_at": "2023-10-13T09:34:53.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.882655,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89751665,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Megan M."
+          }
+        },
+        {
+          "id": 511877815,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Exactly what I was looking for. I wear them for my second and third piercings and can’t feel them at all.",
+          "title": "Just What I Wanted",
+          "created_at": "2023-10-12T20:06:32.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.665037,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89739194,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Calla C."
+          }
+        }
+      ]
+    }
+  },
+  "page10": {
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "response": {
+      "pagination": {
+        "page": 10,
+        "per_page": 5,
+        "total": 4373
+      },
+      "bottomline": {
+        "total_review": 4373,
+        "average_score": 4.70707,
+        "total_organic_reviews": 0,
+        "organic_average_score": 0,
+        "star_distribution": {
+          "1": 120,
+          "2": 71,
+          "3": 119,
+          "4": 350,
+          "5": 3713
+        },
+        "custom_fields_bottomline": null
+      },
+      "grouping_data": {
+        "511695915": {
+          "product_url": "https://yotpo.com/go/winmRCYP",
+          "product_name": "Single Mini Hoop White Gold - 14k White Gold"
+        }
+      },
+      "products": [
+        {
+          "id": 79353001,
+          "domain_key": "1446",
+          "name": "Single Mini Hoop - 14k Yellow Gold",
+          "social_links": {
+            "linkedin": "https://yotpo.com/go/9nsAeySh",
+            "facebook": "https://yotpo.com/go/orpUx2T7",
+            "twitter": "https://yotpo.com/go/2nvI5QnE",
+            "google_oauth2": "https://yotpo.com/go/gJSlHuYh"
+          },
+          "embedded_widget_link": "https://yotpo.com/go/6t5a9UHN",
+          "testimonials_product_link": "https://yotpo.com/go/8wGVQxqN",
+          "product_link": "https://yotpo.com/go/j9S2zgRu",
+          "image_url": "https://cdn-yotpo-images-production.yotpo.com/Product/79353001/279697243/square.jpg?1647804488"
+        }
+      ],
+      "product_tags": null,
+      "reviews": [
+        {
+          "id": 511698306,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I had not had an earring in my cartilage piercing for quite a while but the hole was still open - so i took a chance on reintroducing an earring and this mini hoop was perfect. My ear took really well to it and i love the look.",
+          "title": "Perfect!",
+          "created_at": "2023-10-12T14:11:41.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.982643,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89731987,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Tara Z."
+          }
+        },
+        {
+          "id": 511695915,
+          "score": 4,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I wish they came in a set instead of having to order singles, but they&#x27;re my absolute favourite for everyday wear. They stay put and I never worry about losing one. Love these!",
+          "title": "Best jewellery purchase I&#x27;ve made",
+          "created_at": "2023-10-12T13:41:22.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.984316,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89731346,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Tanya D."
+          }
+        },
+        {
+          "id": 510860686,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "Perfect I use them for my second piercing!",
+          "title": "Every day hoops",
+          "created_at": "2023-10-12T03:06:53.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.97062,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89721646,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Elysia G."
+          }
+        },
+        {
+          "id": 510804388,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "So cute so simple. Sturdy. Perfect for everyday",
+          "title": "I love it",
+          "created_at": "2023-10-11T20:11:26.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.985484,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89713321,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "Crystal C."
+          }
+        },
+        {
+          "id": 510506381,
+          "score": 5,
+          "votes_up": 0,
+          "votes_down": 0,
+          "content": "I love this hoop and all others that I&#x27;ve ordered from Mejuri. This was my first time trying anything from Mejuri and now i&#x27;m obsessed and can&#x27;t get enough. The products are nice quality, they&#x27;re beautiful and the shopping experience is great. 10/10",
+          "title": "Thrilled!",
+          "created_at": "2023-10-11T13:42:32.000Z",
+          "deleted": false,
+          "verified_buyer": true,
+          "source_review_id": null,
+          "sentiment": 0.995728,
+          "custom_fields": null,
+          "product_id": 79353001,
+          "is_incentivized": true,
+          "incentive_type": "yotpo_coupon",
+          "user": {
+            "user_id": 89704352,
+            "social_image": null,
+            "user_type": "User",
+            "is_social_connected": 0,
+            "display_name": "natasha L."
+          }
+        }
+      ]
+    }
+  }
+}

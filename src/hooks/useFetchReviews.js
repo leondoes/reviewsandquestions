@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import mockReviewData from '../mocks/mockReviews.json'
 
 const useFetchReviews = (currentPage) => {
   const [reviews, setReviews] = useState([]);
@@ -6,8 +7,6 @@ const useFetchReviews = (currentPage) => {
   const [averageScore, setAverageScore] = useState(0);
   const [starDistribution, setStarDistribution] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-
-  const reviewsPerPage = 5;
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -27,13 +26,12 @@ const useFetchReviews = (currentPage) => {
     const fetchReviews = async () => {
       setIsLoading(true);
       try {
-        const apiUrl = `https://api.yotpo.com/v1/widget/EolV1WOLJ2UcFKuPJlrtxAIQCCoiDU7c8YqoW2pm/products/727/reviews.json?page=${currentPage}`;
-
-        const response = await fetch(apiUrl);
-        if (!response.ok) {
-          throw new Error(`Network response was not ok: ${response.status}`);
+        const pageKey = `page${currentPage}`;
+        const data = mockReviewData[pageKey];
+        if (!data) {
+          throw new Error('Page data not found');
         }
-        const data = await response.json();
+
         const pagination = data.response.pagination;
         const responseReviews = data.response.reviews;
 
@@ -69,13 +67,8 @@ const useFetchReviews = (currentPage) => {
       }
     };
 
-    if (
-      currentPage <= Math.ceil(totalReviews / reviewsPerPage) ||
-      totalReviews === 0
-    ) {
-      fetchReviews();
-    }
-  }, [currentPage, totalReviews]);
+    fetchReviews();
+  }, [currentPage]);
 
   return { reviews, totalReviews, averageScore, starDistribution, isLoading };
 };

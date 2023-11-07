@@ -1,29 +1,30 @@
-import { useQuery } from "react-query";
+import { useQuery } from 'react-query';
+import mockQuestionData from '../mocks/mockQuestions.json';
 
 const useFetchQuestions = (currentPage) => {
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    const mm = String(date.getMonth() + 1).padStart(2, "0");
-    const dd = String(date.getDate()).padStart(2, "0");
+    const mm = String(date.getMonth() + 1).padStart(2, '0');
+    const dd = String(date.getDate()).padStart(2, '0');
     const yy = String(date.getFullYear()).slice(-2);
     return `${mm}/${dd}/${yy}`;
   };
 
   function decodeHTMLEntities(text) {
-    var textArea = document.createElement("textarea");
+    var textArea = document.createElement('textarea');
     textArea.innerHTML = text;
     return textArea.value;
   }
 
   const fetchQuestions = async ({ queryKey }) => {
     const [, page] = queryKey;
-    const apiUrl = `https://api.yotpo.com/v1/widget/EolV1WOLJ2UcFKuPJlrtxAIQCCoiDU7c8YqoW2pm/products/727/questions.json?page=${page}`;
-    const response = await fetch(apiUrl);
-    if (!response.ok) {
-      throw new Error(`Network response was not ok: ${response.status}`);
+    const pageData = mockQuestionData[`page${page}`]; 
+  
+    if (!pageData || !pageData.response) {
+      throw new Error(`Data for page ${page} not found`);
     }
-    const data = await response.json();
-    const responseQuestions = data.response.questions.map((question) => ({
+  
+    const responseQuestions = pageData.response.questions.map((question) => ({
       ...question,
       content: decodeHTMLEntities(question.content),
       answers: question.answers.map((answer) => ({
@@ -31,14 +32,16 @@ const useFetchQuestions = (currentPage) => {
         content: decodeHTMLEntities(answer.content),
       })),
     }));
+  
     return {
       questions: responseQuestions,
-      totalQuestions: data.response.pagination.total.questions,
+      totalQuestions: pageData.response.pagination.total.questions, // Adjusted to correct path
     };
   };
+  
 
   const { data, isLoading, isError, error } = useQuery(
-    ["questions", currentPage],
+    ['questions', currentPage],
     fetchQuestions,
     {
       keepPreviousData: true,
