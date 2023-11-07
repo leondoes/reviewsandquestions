@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reviewsandquestions/static/css/main.2ee08f68.css",
-    "main.js": "/reviewsandquestions/static/js/main.a2523c20.js",
+    "main.js": "/reviewsandquestions/static/js/main.657b86d2.js",
     "static/media/yotpo-widget-font.svg": "/reviewsandquestions/static/media/yotpo-widget-font.7291a325ffe1ab8eccc3.svg",
     "static/media/yotpo-widget-font.woff": "/reviewsandquestions/static/media/yotpo-widget-font.f0b59efbc86fcd09d072.woff",
     "index.html": "/reviewsandquestions/index.html",
     "main.2ee08f68.css.map": "/reviewsandquestions/static/css/main.2ee08f68.css.map",
-    "main.a2523c20.js.map": "/reviewsandquestions/static/js/main.a2523c20.js.map"
+    "main.657b86d2.js.map": "/reviewsandquestions/static/js/main.657b86d2.js.map"
   },
   "entrypoints": [
     "static/css/main.2ee08f68.css",
-    "static/js/main.a2523c20.js"
+    "static/js/main.657b86d2.js"
   ]
 }
