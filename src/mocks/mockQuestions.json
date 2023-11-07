@@ -1,0 +1,1532 @@
+{
+    "page1": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 1,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 9808015,
+                    "content": "Hello,\nWhat is the inner hoop diameter, not including the hoop thickness? Thanks :)",
+                    "created_at": "2023-02-10T04:51:51.000Z",
+                    "asker": {
+                        "id": 78835806,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Cass"
+                    },
+                    "answers": [
+                        {
+                            "id": 27552067,
+                            "created_at": "2023-02-10T18:08:17.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Cass! The inner diameter of our Single Mini Hoop is approximately 8.5 mm. This piece is handcrafted in 14k solid gold and perfect for daily wear! Should you have any questions, our Customer Happiness Team is always here to chat at contact@mejuri.com.",
+                            "answerer": {
+                                "id": 72377768,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 8568831,
+                    "content": "What is the gauge of the hoop thickness? A previous answer says 18 gauge (0.9mm) but that’s referencing the post thickness.",
+                    "created_at": "2022-08-14T14:06:42.000Z",
+                    "asker": {
+                        "id": 32084118,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Matt"
+                    },
+                    "answers": [
+                        {
+                            "id": 24386501,
+                            "created_at": "2022-08-14T20:37:13.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Matt, thanks for reaching out! Our Single Mini Hoop has a hoop thickness of 1.5 mm. This can also be found under the &#x27;Description &amp; Details&#x27; section of the product page for future reference!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 6952766,
+                    "content": "Is there a trick or easier way to get them to unclasp and clasp? I got them today and immediately tried to put them on. It took over half an hour of struggling almost breaking multiple short nails along the way. Now that’s on, I truly do love it. Problem is, I can’t take it off.. how do I unclasp this without ripping my ear piercing hole?",
+                    "created_at": "2021-10-15T11:20:38.000Z",
+                    "asker": {
+                        "id": 59542845,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Thuc T."
+                    },
+                    "answers": [
+                        {
+                            "id": 19407183,
+                            "created_at": "2021-10-15T15:34:47.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hello Thuc, thanks for reaching out! Happy to provide some insight on the Single Mini Hoop. While it&#x27;s quite sturdy when it first arrives, there is a quick tip on how to open and close the clasp! Try pushing down the groove where the clasp closes with your fingernail, the clasp should pop right open and then simply click back into place. Feel free to click on the following link for a how to video clip: vimeo.com/374468221. Let us know if this works for you!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 6121246,
+                    "content": "Do you ship the jewelry to Germany?",
+                    "created_at": "2021-04-29T15:51:14.000Z",
+                    "asker": {
+                        "id": 53226456,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Linda"
+                    },
+                    "answers": [
+                        {
+                            "id": 16734003,
+                            "created_at": "2021-04-29T16:24:23.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Linda! Good news, we do ship to Germany! We offer free shipping on orders within Europe over $150, otherwise there is a $20 flat rate shipping fee. Once dispatched from our facilities, orders typically arrive within 3-5 business days via DHL Express! Keep in mind that additional duties and taxes may be owed upon delivery that we&#x27;re unable to estimate for you ahead of time as these fees vary by country. If you have any other questions, feel free to reach back out at anytime!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5962931,
+                    "content": "Hi- are there any plans to make this in rose gold? Thank you!",
+                    "created_at": "2021-04-17T20:39:52.000Z",
+                    "asker": {
+                        "id": 52719307,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Michelle"
+                    },
+                    "answers": [
+                        {
+                            "id": 16258218,
+                            "created_at": "2021-04-19T17:00:54.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Michelle! We don&#x27;t have any current plans to introduce our Single Mini Hoop in rose gold, though we&#x27;ll be sure to let our Product Team know this is something you&#x27;re interested in!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "page2": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 2,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 5853522,
+                    "content": "Will this be available in larger diameters like 12mm or 14mm?",
+                    "created_at": "2021-04-09T05:51:15.000Z",
+                    "asker": {
+                        "id": 52192023,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "mary"
+                    },
+                    "answers": [
+                        {
+                            "id": 15993773,
+                            "created_at": "2021-04-09T15:00:40.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Mary! While we don&#x27;t have any current plans to introduce our Single Mini Hoop in larger sizes, if interested in a pair of earrings our Bold Hoops, which have a diameter of 12 mm, and Small Hoops, which are 14 mm in diameter, are great alternatives!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5650006,
+                    "content": "Is this a good size to use for my tragus piercing? I don&#x27;t want it to be too big.",
+                    "created_at": "2021-02-28T01:50:22.000Z",
+                    "asker": {
+                        "id": 50482546,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Carolyn"
+                    },
+                    "answers": [
+                        {
+                            "id": 15347524,
+                            "created_at": "2021-03-01T20:24:39.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Carolyn! All of our earrings, including our Single Mini Hoop, are designed for wear on the lobe. That said, depending on the placement of your piercing and the thickness of that part of your ear it may work! If you&#x27;d like to take it for a spin at home, we do have a quick self-serve returns process for a full refund should it not be a perfect fit. Just be sure the original packaging is intact, tags are attached (if there are any) and there&#x27;s no signs of wear!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5393624,
+                    "content": "Is the 10mm hoop diameter including or excluding the 1.5mm hoop thickness?",
+                    "created_at": "2021-01-06T20:05:40.000Z",
+                    "asker": {
+                        "id": 48280414,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Rosalind"
+                    },
+                    "answers": [
+                        {
+                            "id": 14660052,
+                            "created_at": "2021-01-06T20:30:13.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Rosa! The 10 mm measurement refers to the outer diameter and includes the hoop thickness. If you have any other questions, do let us know!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5228497,
+                    "content": "Is it ok to wear these earrings in the shower?",
+                    "created_at": "2020-11-28T21:04:23.000Z",
+                    "asker": {
+                        "id": 46591443,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Lee"
+                    },
+                    "answers": [
+                        {
+                            "id": 14240408,
+                            "created_at": "2020-11-29T18:19:48.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Lee! Our Single Mini Hoop is made in 14k solid gold and is definitely water friendly! For a bit of insight, 14k is a unique metal in that it is non-reactive and won’t oxidize or discolor, so feel free to sport your hoop while showering, swimming and exercising! Just be mindful that it doesn&#x27;t catch on a loofah ;)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5216805,
+                    "content": "can this piece be worn as nose ring or do you sell nose ring separtely?",
+                    "created_at": "2020-11-27T09:27:34.000Z",
+                    "asker": {
+                        "id": 46538534,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Amb"
+                    },
+                    "answers": [
+                        {
+                            "id": 14230178,
+                            "created_at": "2020-11-27T16:08:59.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Amb! Our Single Mini Hoop is currently designed for wear on the lobe, though we&#x27;ll be sure to let our Product Development Team know you&#x27;d love to see nose rings available!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "page3": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 3,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 5216604,
+                    "content": "Is there a small open space at the bottom of this hoop when clasp is shut? In the pics it looks like a small open hole.",
+                    "created_at": "2020-11-27T07:52:04.000Z",
+                    "asker": {
+                        "id": 46536768,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Tina"
+                    },
+                    "answers": [
+                        {
+                            "id": 14231286,
+                            "created_at": "2020-11-27T18:06:14.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Tina! Our Single Mini Hoop is actually designed with a hollow interior to keep it super lightweight on the lobe - this is likely the open space you&#x27;re referring to! If you&#x27;d like to take a closer peek at this earring, we recommend booking a Virtual Shopping session with us so you can see it &quot;in real life&quot;! To schedule a time, feel free to head over to our site, scroll down to the bottom and click on &#x27;Virtual Shopping&#x27; under &#x27;Support&#x27; :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5213743,
+                    "content": "Can this earring be used for a helix piercing?",
+                    "created_at": "2020-11-26T16:43:18.000Z",
+                    "asker": {
+                        "id": 46277572,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Jess"
+                    },
+                    "answers": [
+                        {
+                            "id": 14212896,
+                            "created_at": "2020-11-26T16:48:40.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Jess! All of our earrings, including our Single Mini Hoop, are currently designed for wear on the lobe. That said, depending on the placement of your piercing and thickness of that part of your ear, it may work! If you&#x27;d like to take it for a spin at home, we do have a quick self-serve returns process available on our site should it not be a perfect fit. Just be sure the original packaging is intact, tags are attached (if there are any) and there&#x27;s no signs of wear :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5193783,
+                    "content": "Could I be sent the video of it being taken on and off before i buy it? Thank you!",
+                    "created_at": "2020-11-23T04:14:50.000Z",
+                    "asker": {
+                        "id": 46391857,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Ren"
+                    },
+                    "answers": [
+                        {
+                            "id": 14195620,
+                            "created_at": "2020-11-25T17:04:02.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Ren! Sure thing! Feel free to click on the following link to see how we best open and close our Single Mini Hoop: https://vimeo.com/374468221. Gently pushing down the groove where the clasp closes with your fingernail will pop the clasp right open and it&#x27;ll then close with a &#x27;click&#x27;! If you have any other questions about how to wear this piece, feel free to reach back out!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5110874,
+                    "content": "How do I take it out of my ear? I am having trouble opening it. (I love the earring, I&#x27;m just scared it&#x27;s stuck in my ear)",
+                    "created_at": "2020-11-12T19:16:11.000Z",
+                    "asker": {
+                        "id": 46029591,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Natalia"
+                    },
+                    "answers": [
+                        {
+                            "id": 14002121,
+                            "created_at": "2020-11-12T19:51:35.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Natalia! Oh no! While our Single Mini Hoop is quite sturdy, if you simply push down the groove where the clasp closes with your fingernail, the clasp should pop right open! We also have a how to video for you to follow along with here: vimeo.com/374468221. Do let us know if this works for you! We&#x27;re always here to chat should you need a hand with anything else :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5071697,
+                    "content": "Hi, are these hollow on the inside? also are they close ended tubes so that moisture wont get in? thanks",
+                    "created_at": "2020-11-05T01:50:02.000Z",
+                    "asker": {
+                        "id": 39141445,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "M"
+                    },
+                    "answers": [
+                        {
+                            "id": 13928726,
+                            "created_at": "2020-11-06T19:27:10.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi there! Our Single Mini Hoop is designed with a hollow interior and has a simple snap closure, as opposed to an endless &quot;tube&quot; like design. With that being said, this earring is made in 14K solid gold, which is a unique metal in that it won&#x27;t oxidize or discolor when in contact with water or any moisture, so feel free to shower, swim and exercise while wearing! If you&#x27;d like to take an up close look at this style and see how to incorporate it into your stack, we recommend booking a Digital Shopping session with us! To schedule a time, feel free to head over to our site, scroll down to the bottom and click on &#x27;Video Styling&#x27; under &#x27;Support&#x27; :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "page4": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 4,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 5067081,
+                    "content": "Hi! Im loving my hoops so far, i&#x27;m wondering how to clean them, and how often? Thank you! :)",
+                    "created_at": "2020-11-03T20:20:48.000Z",
+                    "asker": {
+                        "id": 45558223,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Alex"
+                    },
+                    "answers": [
+                        {
+                            "id": 13895425,
+                            "created_at": "2020-11-03T20:35:13.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Alex! We&#x27;re so glad the hoops are a hit! Our 14K pieces, including our Single Mini Hoop, can be gently cleaned with a toothbrush and warm soapy water whenever you notice any dirt or residue. Should you have any other questions about care, do let us know!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5060555,
+                    "content": "I got my ear lobes pierced 6 weeks ago and will be changing my earrings soon. Are these safe to wear for fairly new piercings? Are they safe to wear to sleep? Could you also email me a tutorial video on how to open/close these earrings? Thank you",
+                    "created_at": "2020-11-02T00:41:01.000Z",
+                    "asker": {
+                        "id": 45423267,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Sherry"
+                    },
+                    "answers": [
+                        {
+                            "id": 13884961,
+                            "created_at": "2020-11-02T20:43:59.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Sherry! While it&#x27;s generally recommended to wait around 6-8 weeks before changing your new piercing, our Single Mini Hoop is a great fit for the earlobe once properly healed and is certainly comfortable enough to sleep in! Just be mindful of any additional or sudden pressures being applied while sleeping, especially if you’re a big toss and turner. Feel free to check out the following video clip to see how we best open and close the clasp: vimeo.com/374468221. Should you have any other questions about this, do let us know!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5021469,
+                    "content": "Hi! I just received my mini hoop in the mail and love the size! Just wondering if you have any tips on opening and closing the clasp? Thanks!",
+                    "created_at": "2020-10-23T16:28:04.000Z",
+                    "asker": {
+                        "id": 44948453,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "SW"
+                    },
+                    "answers": [
+                        {
+                            "id": 13777337,
+                            "created_at": "2020-10-23T16:41:37.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi there! We&#x27;re so glad you&#x27;re loving your new Single Mini Hoop - it&#x27;s the perfect addition to any stack! While it&#x27;s quite sturdy when it first arrives, there is a quick tip on how to open and close the clasp! Try pushing down the groove where the clasp closes with your fingernail, the clasp should pop right open and then simply click back into place. Feel free to click on the following link for a how to video clip: vimeo.com/374468221. Let us know if this works for you :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5001698,
+                    "content": "Whats the gauge of the mini hoop ?",
+                    "created_at": "2020-10-20T14:28:49.000Z",
+                    "asker": {
+                        "id": 44812032,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Monika"
+                    },
+                    "answers": [
+                        {
+                            "id": 13729640,
+                            "created_at": "2020-10-20T19:23:09.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Monika! Our Single Mini Hoop is an 18 gauge (0.9 mm thick post) and is the perfect earring for mix and matching your stack!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4998939,
+                    "content": "Do the earrings make your ear itch? My ears are sensitive and would the gold or white gold be good for my ears?",
+                    "created_at": "2020-10-20T04:16:23.000Z",
+                    "asker": {
+                        "id": 44790143,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "C"
+                    },
+                    "answers": [
+                        {
+                            "id": 13729841,
+                            "created_at": "2020-10-20T19:37:24.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi there! Our Single Mini Hoop, both in yellow and white gold, is nickel-free, making it a perfect choice for those with metal sensitivities or allergies! Should you experience any discomfort, our Customer Happiness Team is always here to take a closer look and help with next steps :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "page5": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 5,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 4989674,
+                    "content": "Hi there, I’m looking to purchase these but are they only sold individually. Do you have any mini hoops sold in pairs? Seems odd to sell an individual earring. Thanks!",
+                    "created_at": "2020-10-18T01:28:37.000Z",
+                    "asker": {
+                        "id": 44704035,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "TJ"
+                    },
+                    "answers": [
+                        {
+                            "id": 13702609,
+                            "created_at": "2020-10-19T17:25:42.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi there! Our Single Mini Hoop is currently only sold individually to give our customers the option to mix &amp; match their stacks and create numerous styles, though you can purchase two for a full set! You may also like our Small Hoops, which are sold as a pair :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4984475,
+                    "content": "Hello,\n\nIs there are a video you can share with me that can show me how to put the earrings on? They are really cute but the clasp isn’t the best. Thank you.",
+                    "created_at": "2020-10-17T03:09:03.000Z",
+                    "asker": {
+                        "id": 44678366,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Rahwa"
+                    },
+                    "answers": [
+                        {
+                            "id": 13703453,
+                            "created_at": "2020-10-19T18:05:31.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Rahwa! Sure thing! We&#x27;ve just sent a video clip your way via email. Feel free to follow up with any other questions :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4958811,
+                    "content": "These have made my ears really sore. I have had my piercings for over 20 years, and never had anything make them sore. Has anyone said anything about that?",
+                    "created_at": "2020-10-13T02:44:59.000Z",
+                    "asker": {
+                        "id": 5831039,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Jenn"
+                    },
+                    "answers": [
+                        {
+                            "id": 13643122,
+                            "created_at": "2020-10-14T16:44:57.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Jenn! Oh no, we&#x27;re sorry to hear this! We see you&#x27;re chatting with our Customer Happiness Team about this. Feel free to follow up with any other questions :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4946015,
+                    "content": "Hi, I would like to see a video on how the clasp works before I buy, is it possible to get it emailed to me? Thanks!",
+                    "created_at": "2020-10-09T15:53:33.000Z",
+                    "asker": {
+                        "id": 14189205,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Jasmine"
+                    },
+                    "answers": [
+                        {
+                            "id": 13591674,
+                            "created_at": "2020-10-09T18:48:10.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Jasmine! Of course! We&#x27;ve just sent a video clip your way! Feel free to follow up with any other questions :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4913379,
+                    "content": "IS THERE A TRICK TO PUTTING ON THE SMALL HOOP EARRING INTO MY CARTLIDGE HOLES? I SAW SOME PICS ON YOUR SITE OF THEM BEING USED THERE",
+                    "created_at": "2020-10-02T18:19:40.000Z",
+                    "asker": {
+                        "id": 5347564,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "KHRISHNA"
+                    },
+                    "answers": [
+                        {
+                            "id": 13490390,
+                            "created_at": "2020-10-02T18:58:10.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Khrishna! Our Single Mini Hoop is actually designed for wear on the lobe. That said, depending on the size and placement of your piercing as well as the thickness of your ear, we have seen customers use this hoop for their cartilage piercing. We do have a quick tip on how to open and close the clasp! We recommend pushing down the groove where the clasp closes with your fingernail, the clasp should pop right open and then simply click back into place. Should you have any other questions, do let us know :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "page6": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 6,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 4867469,
+                    "content": "Is it possible to view a video on how to use the clasp? I cannot get it to remain closed and I&#x27;m worried they are defective. Help!",
+                    "created_at": "2020-09-29T01:12:58.000Z",
+                    "asker": {
+                        "id": 43732946,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Claire"
+                    },
+                    "answers": [
+                        {
+                            "id": 13414639,
+                            "created_at": "2020-09-29T18:59:06.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Claire! We&#x27;re sorry to hear the clasp is being stubborn. We&#x27;ve just sent a video to your email! Let us know if this helps :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4856248,
+                    "content": "Can I put this in a cartilage piercing?",
+                    "created_at": "2020-09-25T20:41:53.000Z",
+                    "asker": {
+                        "id": 43632843,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "maddy"
+                    },
+                    "answers": [
+                        {
+                            "id": 13362531,
+                            "created_at": "2020-09-25T20:48:26.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Maddy! Our Single Mini Hoop is currently designed for the lobe. That said, we&#x27;ll be sure to let our Product Team know you&#x27;d love to see a cartilage option available!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4842175,
+                    "content": "How do you clasp the earring back on?",
+                    "created_at": "2020-09-22T21:38:55.000Z",
+                    "asker": {
+                        "id": 43459812,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "amotts"
+                    },
+                    "answers": [
+                        {
+                            "id": 13296527,
+                            "created_at": "2020-09-23T15:51:21.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi there! Our Single Mini Hoop is quite sturdy when it first arrives. That said, there is a quick tip on how to open and close the clasp! Try pushing down the groove where the clasp closes with your fingernail, the clasp should pop open and then simply click back into place. Let us know if this works for you :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4758065,
+                    "content": "Would this work for a tragus piercing? Which earrings/studs can you recommend? Thanks!",
+                    "created_at": "2020-09-10T14:30:59.000Z",
+                    "asker": {
+                        "id": 42931697,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "JE"
+                    },
+                    "answers": [
+                        {
+                            "id": 13062723,
+                            "created_at": "2020-09-10T14:56:50.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi there! At the moment, all of our earrings are currently designed to fit on the lobe. That said, we&#x27;ll be sure to let our Product Team you&#x27;d love to see tragus earrings available!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4640596,
+                    "content": "Can you please send a video with directions on how to open and close the clasp?",
+                    "created_at": "2020-08-19T17:39:12.000Z",
+                    "asker": {
+                        "id": 25169257,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Brianna"
+                    },
+                    "answers": [
+                        {
+                            "id": 12794894,
+                            "created_at": "2020-08-19T18:24:45.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Brianna! Sure thing! We&#x27;ve just gone ahead and sent a video clip to your email :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "page7": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 7,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 4638877,
+                    "content": "Is there a certain way to clasp this earring? I’m having trouble getting it to close",
+                    "created_at": "2020-08-19T12:41:45.000Z",
+                    "asker": {
+                        "id": 41873320,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Chelsea"
+                    },
+                    "answers": [
+                        {
+                            "id": 12795602,
+                            "created_at": "2020-08-19T19:45:57.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Chelsea! We see you&#x27;ve been chatting with our Customer Happiness Team about this! Feel free to follow up with any other questions :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4575237,
+                    "content": "I am thinking about buying these and pairing them with the dome hoops, although they are not the same material. I was wondering if the coloring of these two pairs of hoops are the same so that I can wear them together.",
+                    "created_at": "2020-08-07T11:48:21.000Z",
+                    "asker": {
+                        "id": 41177079,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Lindsey"
+                    },
+                    "answers": [
+                        {
+                            "id": 12621544,
+                            "created_at": "2020-08-07T17:33:55.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Lindsey! As our 14K and gold vermeil pieces contain different alloys, the hues can vary slightly. That said, lots of customers (us included 😉) love to mix and match our metals! If you&#x27;d like to see how our Single Mini Hoop and Dôme Hoops pair together up close, we recommend booking a digital styling appointment with us! To schedule a time, head on over to our site, scroll down to the bottom and click on &#x27;Video Styling&#x27; under &#x27;Support.&#x27; If you&#x27;d prefer to stick to one metal type when stacking, we suggest taking a look at our Bold Hoops :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4570179,
+                    "content": "Hi, I am allergic to nickel and i was just wondering if your jewelry is nickel-free?",
+                    "created_at": "2020-08-06T03:14:09.000Z",
+                    "asker": {
+                        "id": 41072147,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Liza"
+                    },
+                    "answers": [
+                        {
+                            "id": 12587815,
+                            "created_at": "2020-08-06T18:00:01.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Liza! All of our collections are either nickel-free or nickel-safe. A small portion of our jewelry is considered as nickel-safe meaning that they have micro traces of nickel. What does this mean? Although North America (the United States and Canada) may not have any specific regulation restricting the use the nickel, all jewelers working with Mejuri use metals that are heavily regulated under the EU-REACH registration. This limits the amount of nickel used (micro trace amount), making them unlikely to cause an allergy. For reference, our Single Mini Hoop, along with all of our yellow gold pieces, are in fact nickel-free and should fit super comfortably! Should you experience any kind of reaction, we&#x27;re always here to chat :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4557722,
+                    "content": "The description states the earring has a 10mm diameter, does this refer to the inner or outer diameter??",
+                    "created_at": "2020-08-03T03:16:12.000Z",
+                    "asker": {
+                        "id": 40801026,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Stephanie"
+                    },
+                    "answers": [
+                        {
+                            "id": 12580591,
+                            "created_at": "2020-08-06T15:28:25.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Stephanie! For reference, our Single Mini Hoop has an inner diameter of 7mm and an outer diameter of 10mm. As our smallest hoop, she does hug the ear more closely and is super versatile for for mix and matching with other earrings!",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4546631,
+                    "content": "Hi there, I just got my hoop open but I’m not sure how to close it and I don’t want to try and forcefully close it in case I break it. Any tips? It doesn’t feel like it “snaps shut” at All.",
+                    "created_at": "2020-07-30T20:39:32.000Z",
+                    "asker": {
+                        "id": 40693990,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Lily"
+                    },
+                    "answers": [
+                        {
+                            "id": 12571645,
+                            "created_at": "2020-08-05T20:17:19.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Lily! Oh no, sorry to hear the clasp is being stubborn! It&#x27;s possible that a bit too much pressure was applied when first opening it. Not to worry, there&#x27;s a quick fix! We recommend gently pushing the clasp part (the side with ridges) outwards with your finger (be sure not to push it too hard) to make a proper circle shape instead of a &quot;6&quot;? The clasp should shut close with a tighter, more secure fit! Let us know if this works for you :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "page8": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 8,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 4530127,
+                    "content": "I would like to review the video on opening the clasp before I purchase. Could you please email it to me? Thank you.",
+                    "created_at": "2020-07-26T17:05:13.000Z",
+                    "asker": {
+                        "id": 25550164,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "EHD"
+                    },
+                    "answers": [
+                        {
+                            "id": 12569369,
+                            "created_at": "2020-08-05T17:37:02.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi there! Sure thing! We&#x27;ve just gone ahead and sent the video to your email. Let us know if you have any other questions about this piece :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4429584,
+                    "content": "How heavy is each hoop?",
+                    "created_at": "2020-07-06T03:55:22.000Z",
+                    "asker": {
+                        "id": 39043405,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Yuying"
+                    },
+                    "answers": [
+                        {
+                            "id": 12139088,
+                            "created_at": "2020-07-07T17:20:45.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Yuying! Our Single Mini Hoop is sold individually! A single earring weighs around 0.3 grams. As our smallest hoop, it sits super light on the lobe - you won&#x27;t even feel that it&#x27;s there ;)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4385718,
+                    "content": "The single hoop is stuck on my cartilage and won&#x27;t come out. I keep pressing my finger into the little dent but it&#x27;s not coming out. I&#x27;m panicking, it&#x27;s been weeks! Why would someone create a clasp so difficult? My ear has been bleeding. Please someone help me.",
+                    "created_at": "2020-06-24T23:18:13.000Z",
+                    "asker": {
+                        "id": 16582620,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Sarah"
+                    },
+                    "answers": [
+                        {
+                            "id": 12122198,
+                            "created_at": "2020-07-06T12:36:01.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Sarah! Oh no! We see that you chatted with one of our Customer Happiness reps about this via email! Let us know if you&#x27;d like any further help :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4329478,
+                    "content": "Could this be used for a tragus?",
+                    "created_at": "2020-06-14T20:49:57.000Z",
+                    "asker": {
+                        "id": 2224964,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "loloed"
+                    },
+                    "answers": [
+                        {
+                            "id": 11931371,
+                            "created_at": "2020-06-17T18:04:44.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi there! All of our earrings are actually designed for the lobe! That said, we&#x27;ll be sure to let our Product Team know this is something you&#x27;re interested in :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4304950,
+                    "content": "Hi,\n\nI was wondering if you could send a video on how to put these on? They&#x27;re so difficult, thanks.",
+                    "created_at": "2020-06-09T14:26:55.000Z",
+                    "asker": {
+                        "id": 37838423,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Diana"
+                    },
+                    "answers": [
+                        {
+                            "id": 11855568,
+                            "created_at": "2020-06-10T17:01:32.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Diana! We see that our Customer Happiness Team has followed up via email about this! Feel free to respond to that thread for further help :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "page9": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 9,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 4245998,
+                    "content": "Hi! Could you send me the video on how to open and close these earrings? I am having some trouble.",
+                    "created_at": "2020-05-29T21:06:45.000Z",
+                    "asker": {
+                        "id": 37312555,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Maia"
+                    },
+                    "answers": [
+                        {
+                            "id": 11745061,
+                            "created_at": "2020-06-01T18:10:57.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Maia! Our Single Mini Hoop is quite sturdy when it first arrives to ensure it stays secure and in place all day long! That said, there is a quick tip on how to open and close the clasp! Try pushing down the groove where the clasp closes with your fingernail, the clasp should pop open and then simply click back into place. We&#x27;ve also sent a video clip to your email for reference :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4164176,
+                    "content": "Hello! Will this fit like a huggie hoop on my earlobe?",
+                    "created_at": "2020-05-12T02:39:14.000Z",
+                    "asker": {
+                        "id": 36466565,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Shannon"
+                    },
+                    "answers": [
+                        {
+                            "id": 11521147,
+                            "created_at": "2020-05-13T17:33:05.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Shannon! For reference, our Single Mini Hoop has a diameter of 10mm and does hug the ear more closely! That said, depending on the overall shape and thickness of your lobe, as well as which piercing hole you place it in, there can be a little drop. Feel free to reach out with any other questions :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4105084,
+                    "content": "What is the inner diameter and outer diameter of the earrings?",
+                    "created_at": "2020-04-28T19:43:12.000Z",
+                    "asker": {
+                        "id": 35904864,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Kate"
+                    },
+                    "answers": [
+                        {
+                            "id": 11376600,
+                            "created_at": "2020-04-29T17:42:39.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Kate! Our Single Mini Hoop has an outer diameter of 10mm and an inner diameter of approximately 7mm! Feel free to reach out with any other questions :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4064320,
+                    "content": "Hi there, \n\nCan you please send me a video of how to put the earring on. Before I go ahead with the purchase.\n\nThank you!",
+                    "created_at": "2020-04-22T02:50:34.000Z",
+                    "asker": {
+                        "id": 35601924,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Michelle"
+                    },
+                    "answers": [
+                        {
+                            "id": 11318306,
+                            "created_at": "2020-04-23T19:06:26.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Michelle! We&#x27;ve just sent the video to your email for future reference! Let us know if you have any other questions :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4059986,
+                    "content": "How do you close the hoop? It won’t click shut?",
+                    "created_at": "2020-04-21T07:13:19.000Z",
+                    "asker": {
+                        "id": 18381878,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Sophia"
+                    },
+                    "answers": [
+                        {
+                            "id": 11318346,
+                            "created_at": "2020-04-23T19:12:03.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Sophia! Our Single Mini Hoop is quite sturdy when it first arrives. There is a quick tip on how to open and close the clasp though! Try pushing down the groove where the clasp closes with your fingernail, the clasp should pop open and then simply click back into place! We&#x27;ve also sent a video clip to your email for reference! Let us know if this works for you :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "page10": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "response": {
+            "pagination": {
+                "page": 10,
+                "per_page": 5,
+                "total": {
+                    "questions": 92,
+                    "answers": 92
+                }
+            },
+            "questions": [
+                {
+                    "id": 3999187,
+                    "content": "Can you please send me a video explaining how to clasp this earring? It is extremely difficult to figure out.",
+                    "created_at": "2020-04-07T01:25:16.000Z",
+                    "asker": {
+                        "id": 35005441,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Celia"
+                    },
+                    "answers": [
+                        {
+                            "id": 11184593,
+                            "created_at": "2020-04-08T15:19:01.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Celia! Our Single Mini Hoop is quite sturdy when it first arrives. There is a quick tip on how to open and close the clasp though! Try pushing down the groove where the clasp closes with your fingernail, the clasp should pop open and then simply click back into place! We&#x27;ve also sent a video clip to your email for reference :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3952576,
+                    "content": "Hi! The back of my clasp is really flimsy. And I can’t seem to get the “clicking” sound. I don’t know if this is normal or there’s some defect but it doesn’t feel secure at all. Thanks!",
+                    "created_at": "2020-03-26T01:32:48.000Z",
+                    "asker": {
+                        "id": 34668364,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Shar"
+                    },
+                    "answers": [
+                        {
+                            "id": 10948285,
+                            "created_at": "2020-03-26T16:02:59.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Shar! Sorry to hear the clasp is being stubborn! There&#x27;s a quick fix: can you try gently pushing the clasp part (the side with ridges) outwards with your finger (be sure not to push it too hard) to make a proper circle shape instead of a &quot;6&quot;? The clasp should shut close with a tighter, more secure fit! Feel free to let us know if this works for you :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3935529,
+                    "content": "Does this earring work for the cartilage?",
+                    "created_at": "2020-03-21T01:15:25.000Z",
+                    "asker": {
+                        "id": 34536723,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "Athena"
+                    },
+                    "answers": [
+                        {
+                            "id": 10933810,
+                            "created_at": "2020-03-24T18:45:59.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Athena! All of our earrings, including our Single Mini Hoop, are designed for the lobe! That said, we&#x27;ll make sure to share this suggestion with our Product Team :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3926022,
+                    "content": "I currently wear 3 small hoops in each ear. I&#x27;m happy with what I have, except that I simply CANNOT put them in myself- adult daughter has to do it for me. My nails get in the way 99% of the time, unless I cut them way down. Will I like these? Will I be able to put them in by myself?? I see there&#x27;s a video available- send please??",
+                    "created_at": "2020-03-17T01:20:53.000Z",
+                    "asker": {
+                        "id": 34447828,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "TJ"
+                    },
+                    "answers": [
+                        {
+                            "id": 10875428,
+                            "created_at": "2020-03-17T17:22:42.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi there! Our Single Mini Hoop is quite sturdy when it first arrives. That said, there is a quick tip on how to open and close the clasp! We recommend pushing down the groove where the clasp closes with your fingernail, the clasp should pop open and then simply click back into place! We&#x27;ve also sent a video clip to your email for reference :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3904385,
+                    "content": "I’m having the hardest time taking out the single hoop. any tips??",
+                    "created_at": "2020-03-10T02:25:02.000Z",
+                    "asker": {
+                        "id": 34266450,
+                        "social_image": null,
+                        "is_social_connected": false,
+                        "display_name": "gabby"
+                    },
+                    "answers": [
+                        {
+                            "id": 10415856,
+                            "created_at": "2020-03-10T17:20:53.000Z",
+                            "votes_up": 0,
+                            "votes_down": 0,
+                            "store_owner_comment": true,
+                            "content": "Hi Gabby! Our Single Mini Hoop is quite sturdy! There is a quick tip on how to open and close the clasp though! Try pushing down the groove where the clasp closes with your fingernail, the clasp should pop open and then simply click back into place! We&#x27;ve also sent a video clip to your email for reference. Feel free to reach out with any other questions :)",
+                            "answerer": {
+                                "id": 30801815,
+                                "is_social_connected": false,
+                                "social_image": null,
+                                "display_name": "Mejuri"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
