@@ -26,9 +26,11 @@ const useFetchQuestions = (currentPage) => {
   
     const responseQuestions = pageData.response.questions.map((question) => ({
       ...question,
+      id:question.id,
       content: decodeHTMLEntities(question.content),
       answers: question.answers.map((answer) => ({
         ...answer,
+        id:answer.id,
         content: decodeHTMLEntities(answer.content),
       })),
     }));

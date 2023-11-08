@@ -35,5 +35,6 @@ export const PageContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
+  padding-left: calc(100vw - 100%);
 padding: 30px;
 `;

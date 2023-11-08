@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import QuestionPagination from "../QuestionsPagination";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
   AllQuestions,
   QuestionItem,
@@ -15,29 +16,53 @@ import {
   AnswerBottomBorder,
   AnswerContent,
   AskQuestionButton,
-  LoadingContainer
+  LoadingContainer,
 } from "./styled";
 import useFetchQuestions from "../../hooks/useFetchQuestions";
 
 const QuestionsDisplay = ({
   currentPage,
   setCurrentPage,
-  onAskQuestionClick
+  onAskQuestionClick,
+  simulateEmpty,
 }) => {
   const questionsContainerRef = useRef(null);
   const questionsPerPage = 5;
-  const { questions, totalQuestions, formatDate, loading } = useFetchQuestions(currentPage);
+  const questionRef = React.useRef(null);
+  const { questions, totalQuestions, formatDate, isLoading } =
+    useFetchQuestions(currentPage, simulateEmpty);
 
-  if (loading) {
+
+
+  if (isLoading) {
     return <LoadingContainer>Loading questions...</LoadingContainer>;
   }
+
   return (
     <div>
-      {totalQuestions > 0 ? (
-        <>
-          <AllQuestions ref={questionsContainerRef}>
-            {questions.map((question) => (
-              <QuestionItem key={question.id}>
+      <TransitionGroup component={null}>
+        {totalQuestions === 0 || simulateEmpty ? (
+          <CSSTransition
+            nodeRef={questionsContainerRef}
+            key="no-questions"
+            timeout={500}
+            classNames="question"
+          >
+            <AllQuestions ref={questionsContainerRef}>
+              <AskQuestionButton onClick={onAskQuestionClick}>
+                Be the first to ask a question
+              </AskQuestionButton>
+            </AllQuestions>
+          </CSSTransition>
+        ) : (
+          questions.map((question) => (
+            <CSSTransition
+              key={question.id}
+              nodeRef={questionRef}
+              timeout={500}
+              classNames="question"
+            >
+              <QuestionItem>
                 <AskerInfo>
                   {question.asker.display_name}
                   <QuestionDate>{formatDate(question.created_at)}</QuestionDate>
@@ -62,24 +87,18 @@ const QuestionsDisplay = ({
                 )}
                 <AnswerBottomBorder />
               </QuestionItem>
-            ))}
-          </AllQuestions>
-          <QuestionPagination
-            currentPage={currentPage}
-            totalPages={Math.ceil(totalQuestions / questionsPerPage)}
-            onPageChange={setCurrentPage}
-            questionsContainerRef={questionsContainerRef}
-          />
-        </>
-      ) : (
-        !loading && (
-          <AllQuestions>
-            <AskQuestionButton onClick={onAskQuestionClick}>
-              Be the first to ask a question
-            </AskQuestionButton>
-          </AllQuestions>
-        )
-      )}
+            </CSSTransition>
+          ))
+        )}
+      </TransitionGroup>
+      {!isLoading && totalQuestions > 0 && questions.length > 0 && (
+  <QuestionPagination
+    currentPage={currentPage}
+    totalPages={Math.ceil(totalQuestions / questionsPerPage)}
+    onPageChange={setCurrentPage}
+    questionsContainerRef={questionsContainerRef}
+  />
+)}
     </div>
   );
 };

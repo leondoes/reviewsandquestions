@@ -10,6 +10,7 @@ import {
   VerticalDivider,
   RatingsContainer,
   QuestionFormContainer,
+  Placeholder
 } from "./styled";
 import FormComplete from "../FormComplete";
 import StarCalculator from "../StarCalculator";
@@ -17,7 +18,7 @@ import QuestionForm from "../QuestionForm";
 import SortByStars from "../SortByStars";
 import DataContext from "../../contexts/Data/DataContext";
 
-const OverallRatings = ({ isQuestionFormVisible, onAskQuestionClick }) => {
+const OverallRatings = ({ isQuestionFormVisible, onAskQuestionClick, simulateReviewsEmpty }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { totalReviews, totalQuestions, averageScore } =
     useContext(DataContext);
@@ -47,20 +48,30 @@ const OverallRatings = ({ isQuestionFormVisible, onAskQuestionClick }) => {
       <RatingsContainer>
         <AverageRating>
           <StarAverage>
-            {averageScore ? averageScore.toFixed(1) : ""}
-            <StarCalculator averageScore={averageScore || 0} />
+            {!simulateReviewsEmpty && averageScore ? averageScore.toFixed(1) : ""}
+            {!simulateReviewsEmpty && <StarCalculator averageScore={averageScore || 0} />}
           </StarAverage>
 
           <AllTotals>
-            {totalReviews ? `${totalReviews} Reviews` : "0 Reviews"}
-            {totalQuestions > 0 && `, ${totalQuestions} Q&As`}
+            {!simulateReviewsEmpty && totalReviews ? `${totalReviews} Reviews` : "0 Reviews"}
+            {!simulateReviewsEmpty && totalQuestions > 0 && `, ${totalQuestions} Q&As`}
           </AllTotals>
         </AverageRating>
-        <VerticalDivider totalReviews={totalReviews} />
-        <StarRatingsContainer totalReviews={totalReviews}>
-          <SortByStars />
-        </StarRatingsContainer>
-        <VerticalDivider totalReviews={totalReviews} />
+        {simulateReviewsEmpty ? (
+          <>
+            <Placeholder/>
+            <Placeholder/>
+            <Placeholder/>
+          </>
+        ) : (
+          <>
+            <VerticalDivider totalReviews={totalReviews} />
+            <StarRatingsContainer totalReviews={totalReviews}>
+              <SortByStars />
+            </StarRatingsContainer>
+            <VerticalDivider totalReviews={totalReviews} />
+          </>
+        )}
 
         <AskQuestionContainer>
           <AskQuestionButton onClick={handleAskQuestionClick}>
