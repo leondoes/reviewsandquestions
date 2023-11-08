@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import mockReviewData from '../mocks/mockReviews.json'
+import mockReviewData from '../mocks/mockReviews.json';
 
-const useFetchReviews = (currentPage) => {
+const useFetchReviews = (currentPage, simulateEmpty) => {
   const [reviews, setReviews] = useState([]);
   const [totalReviews, setTotalReviews] = useState(0);
   const [averageScore, setAverageScore] = useState(0);
@@ -24,8 +24,9 @@ const useFetchReviews = (currentPage) => {
 
   useEffect(() => {
     const fetchReviews = async () => {
-      setIsLoading(true);
       try {
+        // Fetching logic starts here
+        setIsLoading(true);
         const pageKey = `page${currentPage}`;
         const data = mockReviewData[pageKey];
         if (!data) {
@@ -38,20 +39,15 @@ const useFetchReviews = (currentPage) => {
         if (pagination) {
           setTotalReviews(pagination.total);
         }
-        if (
-          data.response.bottomline &&
-          data.response.bottomline.average_score
-        ) {
+        if (data.response.bottomline?.average_score) {
           setAverageScore(data.response.bottomline.average_score);
         }
-        if (
-          data.response.bottomline &&
-          data.response.bottomline.star_distribution
-        ) {
+        if (data.response.bottomline?.star_distribution) {
           setStarDistribution(data.response.bottomline.star_distribution);
         }
         if (Array.isArray(responseReviews)) {
           const extractedReviews = responseReviews.map((review) => ({
+            id: review.id,
             displayName: decodeHTMLEntities(review.user.display_name),
             starRating: review.score,
             reviewText: decodeHTMLEntities(review.content),
@@ -60,6 +56,7 @@ const useFetchReviews = (currentPage) => {
           }));
           setReviews(extractedReviews);
         }
+        // Fetching logic ends here
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -67,8 +64,18 @@ const useFetchReviews = (currentPage) => {
       }
     };
 
-    fetchReviews();
-  }, [currentPage]);
+    if (simulateEmpty) {
+      // When simulateEmpty is true, we simulate an empty state
+      setReviews([]);
+      setTotalReviews(0);
+      setAverageScore(0);
+      setStarDistribution({});
+      setIsLoading(false);
+    } else {
+      // When simulateEmpty is false, we proceed to fetch reviews
+      fetchReviews().catch(console.error);
+    }
+  }, [currentPage, simulateEmpty]); // Corrected the dependencies of useEffect
 
   return { reviews, totalReviews, averageScore, starDistribution, isLoading };
 };

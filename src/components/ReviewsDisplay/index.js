@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import ReviewPagination from "../ReviewPagination";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
   AllReviews,
   NameColumn,
@@ -14,9 +15,9 @@ import {
 } from "./styled";
 import useFetchReviews from "../../hooks/useFetchReviews";
 
-const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
+const ReviewsDisplay = ({ currentPage, setCurrentPage, simulateEmpty }) => {
   const reviewsContainerRef = useRef(null);
-  const { reviews, totalReviews, isLoading } = useFetchReviews(currentPage); // Extract isLoading
+  const { reviews, totalReviews, isLoading } = useFetchReviews(currentPage, simulateEmpty); // Extract isLoading
 
   const renderStarRating = (rating) => {
     const filledStars = String.fromCharCode(0xe60e).repeat(rating);
@@ -33,15 +34,24 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
     }));
   };
 
+  const reviewRef = React.useRef(null);
+
   return (
     <div>
       {isLoading ? (
         <LoadingContainer>Loading reviews...</LoadingContainer>
       ) : (
         <AllReviews ref={reviewsContainerRef}>
-          {totalReviews > 0 ? (
-            reviews.map((review, index) => (
-              <ReviewListItem key={index}>
+          <TransitionGroup component={null}>
+            {totalReviews > 0 ? (
+              reviews.map((review, index) => (
+                <CSSTransition 
+                key={review.id}
+                timeout={500} 
+                classNames="review"
+                nodeRef={reviewRef}
+              >
+                  <ReviewListItem ref={reviewRef}>
                 <NameColumn>{review.displayName}</NameColumn>
                 <ContentColumn>
                   <Stars>{renderStarRating(review.starRating)}</Stars>
@@ -60,18 +70,21 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage }) => {
                   </Content>
                 </ContentColumn>
                 <DateColumn>{review.reviewDate}</DateColumn>
-              </ReviewListItem>
-            ))
-          ) : (
-            <NoReviewsMessage>
-              Currently, there are no reviews for this product.
-            </NoReviewsMessage>
-          )}
+                </ReviewListItem>
+                </CSSTransition>
+              ))
+            ) : (
+              <CSSTransition nodeRef={reviewRef}  key="no-reviews" timeout={500} classNames="review">
+                <NoReviewsMessage>
+                  Currently, there are no reviews for this product.
+                </NoReviewsMessage>
+              </CSSTransition>
+            )}
+          </TransitionGroup>
         </AllReviews>
       )}
-      {!isLoading &&
-        totalReviews > 0 && (
-          <ReviewPagination
+      {!isLoading && totalReviews > 0 && (
+        <ReviewPagination
             currentPage={currentPage}
             totalPages={Math.ceil(totalReviews / 5)}
             onPageChange={setCurrentPage}

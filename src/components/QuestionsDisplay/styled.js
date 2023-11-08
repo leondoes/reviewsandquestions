@@ -1,4 +1,25 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+`;
 
 export const AllQuestions = styled.div`
   display: flex;
@@ -9,8 +30,19 @@ export const AllQuestions = styled.div`
   min-height: 130px;
 `;
 
+
 export const QuestionItem = styled.div`
-width: 100%;
+  width: 100%;
+  
+  // Add this for the entering animation
+  &.question-enter {
+    animation: ${fadeIn} 500ms forwards;
+  }
+
+  // Add this for the exiting animation
+  &.question-exit {
+    animation: ${fadeOut} 500ms forwards;
+  }
 `;
 
 export const AskerInfo = styled.div`

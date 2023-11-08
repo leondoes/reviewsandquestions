@@ -1,4 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+`;
 
 export const OverallContainer = styled.div``;
 
@@ -41,13 +59,35 @@ export const StarRatingsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: ${({ totalReviews }) =>
-    totalReviews > 0 ? "visible" : "hidden"};
+  animation: ${({ totalReviews }) => totalReviews > 0 ? fadeIn : fadeOut} 0.5s ease;
+  visibility: ${({ totalReviews }) => totalReviews > 0 ? 'visible' : 'hidden'};
+  height: ${({ totalReviews }) => totalReviews > 0 ? 'auto' : '70px'};
 
-  // Hide if no reviews and below 770px screen width
   @media (max-width: 770px) {
-    display: ${({ totalReviews }) => (totalReviews > 0 ? "flex" : "none")};
+    display: flex; // You can keep flex here, no need to switch to 'none'
     padding-left: 20px;
+  }
+`;
+
+export const VerticalDivider = styled.div`
+  background-color: #979797;
+  width: 1px;
+  height: 70px;
+  margin: auto;
+  animation: ${({ totalReviews }) => totalReviews > 0 ? fadeIn : fadeOut} 0.5s ease;
+  visibility: ${({ totalReviews }) => totalReviews > 0 ? 'visible' : 'hidden'};
+
+  @media (max-width: 770px) {
+    display: none; // Keep the divider block, no need to switch to 'none'
+  }
+`;
+
+export const Placeholder = styled.div`
+width: 100%;
+height: 70px;
+
+@media (max-width: 770px) {
+    display: none; // Keep the divider block, no need to switch to 'none'
   }
 `;
 
@@ -84,20 +124,7 @@ export const AskQuestionButton = styled.button`
   }
 `;
 
-export const VerticalDivider = styled.div`
-  background-color: #979797;
-  width: 1px;
-  height: 70px;
-  margin: auto;
-  visibility: ${({ totalReviews }) =>
-    totalReviews > 0 ? "visible" : "hidden"};
 
-  // Hide if no reviews and below 770px screen width
-  @media (max-width: 770px) {
-    display: ${({ totalReviews }) => (totalReviews > 0 ? "block" : "none")};
-    display: none;
-  }
-`;
 
 export const QuestionFormContainer = styled.div`
   max-height: 0;

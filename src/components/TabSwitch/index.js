@@ -3,7 +3,7 @@ import { TabStyle, TabSwitchContainer } from "./styled";
 import ReviewsDisplay from "../ReviewsDisplay";
 import QuestionsDisplay from "../QuestionsDisplay";
 
-const TabSwitch = ({ isQuestionFormVisible, onAskQuestionClick }) => {
+const TabSwitch = ({ onAskQuestionClick, simulateReviewsEmpty, simulateQuestionsEmpty }) => {
   const [selectedTab, setSelectedTab] = useState("Reviews");
   const [reviewsCurrentPage, setReviewsCurrentPage] = useState(1);
   const [questionsCurrentPage, setQuestionsCurrentPage] = useState(1);
@@ -34,15 +34,17 @@ const TabSwitch = ({ isQuestionFormVisible, onAskQuestionClick }) => {
           key="reviews"
           currentPage={reviewsCurrentPage}
           setCurrentPage={setReviewsCurrentPage}
+          simulateEmpty={simulateReviewsEmpty}
         />
       )}
       {selectedTab === "Questions" && (
         <QuestionsDisplay
-          key="questions"
-          currentPage={questionsCurrentPage}
-          setCurrentPage={setQuestionsCurrentPage}
-          onAskQuestionClick={onAskQuestionClick}
-        />
+        key="questions"
+        currentPage={questionsCurrentPage}
+        setCurrentPage={setQuestionsCurrentPage}
+        onAskQuestionClick={onAskQuestionClick}
+        simulateEmpty={simulateQuestionsEmpty}
+      />
       )}
     </div>
   );

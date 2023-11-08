@@ -1,4 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+`;
 
 export const ReviewListItem = styled.li`
   list-style: none;
@@ -19,6 +37,16 @@ export const ReviewListItem = styled.li`
     align-items: flex-start;
     justify-content: space-between;
     padding-left: 0;
+  }
+
+   // Add this for the entering animation
+   &.review-enter {
+    animation: ${fadeIn} 500ms forwards;
+  }
+
+  // Add this for the exiting animation
+  &.review-exit {
+    animation: ${fadeOut} 500ms forwards;
   }
 `;
 
