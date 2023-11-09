@@ -43,15 +43,20 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage, simulateEmpty }) => {
       ) : (
         <AllReviews ref={reviewsContainerRef}>
           <TransitionGroup component={null}>
-            {totalReviews > 0 ? (
-              reviews.map((review, index) => (
-                <CSSTransition 
-                key={review.id}
-                timeout={500} 
-                classNames="review"
-                nodeRef={reviewRef}
-              >
-                  <ReviewListItem ref={reviewRef}>
+          {totalReviews > 0 ? (
+  reviews.map((review, index) => {
+    const reviewRef = React.createRef();
+
+    // Return the CSSTransition component
+    return (
+      <CSSTransition 
+        key={review.id}
+        timeout={600} 
+        classNames="review"
+        nodeRef={reviewRef}
+        unmountOnExit
+      >
+        <ReviewListItem ref={reviewRef}>
                 <NameColumn>{review.displayName}</NameColumn>
                 <ContentColumn>
                   <Stars>{renderStarRating(review.starRating)}</Stars>
@@ -71,15 +76,16 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage, simulateEmpty }) => {
                 </ContentColumn>
                 <DateColumn>{review.reviewDate}</DateColumn>
                 </ReviewListItem>
-                </CSSTransition>
-              ))
-            ) : (
-              <CSSTransition nodeRef={reviewRef}  key="no-reviews" timeout={500} classNames="review">
-                <NoReviewsMessage>
-                  Currently, there are no reviews for this product.
-                </NoReviewsMessage>
-              </CSSTransition>
-            )}
+      </CSSTransition>
+    );
+  })
+) : (
+  <CSSTransition nodeRef={reviewRef} key="no-reviews" timeout={600} classNames="review">
+    <NoReviewsMessage ref={reviewRef}>
+      Currently, there are no reviews for this product.
+    </NoReviewsMessage>
+  </CSSTransition>
+)}
           </TransitionGroup>
         </AllReviews>
       )}
