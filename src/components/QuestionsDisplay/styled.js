@@ -3,11 +3,9 @@ import styled, {keyframes} from "styled-components";
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(-20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 `;
 
@@ -17,7 +15,6 @@ const fadeOut = keyframes`
   }
   to {
     opacity: 0;
-    transform: translateY(20px);
   }
 `;
 
@@ -39,9 +36,17 @@ export const QuestionItem = styled.div`
     animation: ${fadeIn} 500ms forwards;
   }
 
+  &.question-enter-active {
+    animation: ${fadeIn} 500ms forwards;
+  }
+
   // Add this for the exiting animation
   &.question-exit {
     animation: ${fadeOut} 500ms forwards;
+
+    &.question-exit-active {
+  animation: ${fadeOut} 500ms forwards;
+}
   }
 `;
 
@@ -175,6 +180,27 @@ export const AskQuestionButton = styled.button`
   transition: background-color 0.2s ease-in-out;
   &:hover {
     background-color: #ededed;
+  }
+
+  visibility: hidden;
+  opacity: 0;
+  
+  // Define your animation (keep the name unique if you have multiple animations)
+  animation: fadeInAskButton 0.5s ease-out 600ms forwards;
+
+  @keyframes fadeInAskButton {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    1% {
+      opacity: 0;
+      visibility: visible; // Make the button visible but still fully transparent
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 `;
 

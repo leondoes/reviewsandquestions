@@ -3,6 +3,8 @@ import { themeFont } from "../../common/theme";
 
 export const PageContainer = styled.div`
   font-family : ${themeFont.ContentFont};
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
   background-color: white;
   height: 100%;
   width: 100%;
@@ -35,6 +37,7 @@ export const PageContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  padding-left: calc(100vw - 100%);
 padding: 30px;
+overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
 `;

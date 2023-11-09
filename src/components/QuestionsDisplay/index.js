@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import QuestionPagination from "../QuestionsPagination";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
@@ -26,13 +26,29 @@ const QuestionsDisplay = ({
   onAskQuestionClick,
   simulateEmpty,
 }) => {
+  const [showAskButton, setShowAskButton] = useState(false);
+  useEffect(() => {
+    // Delay for the duration of the animation
+    const timeoutId = setTimeout(() => {
+      setShowAskButton(true);
+    }, 600); // Animation duration time in milliseconds
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   const questionsContainerRef = useRef(null);
   const questionsPerPage = 5;
-  const questionRef = React.useRef(null);
   const { questions, totalQuestions, formatDate, isLoading } =
     useFetchQuestions(currentPage, simulateEmpty);
 
+    
 
+  const questionRefs = useRef([]);
+  questionRefs.current = questions.map((_, i) => questionRefs.current[i] ?? React.createRef());
+
+  useEffect(() => {
+    questionRefs.current = questions.map((_, i) => questionRefs.current[i] ?? React.createRef());
+  }, [questions]);
 
   if (isLoading) {
     return <LoadingContainer>Loading questions...</LoadingContainer>;
@@ -45,24 +61,27 @@ const QuestionsDisplay = ({
           <CSSTransition
             nodeRef={questionsContainerRef}
             key="no-questions"
-            timeout={500}
+            timeout={600}
             classNames="question"
           >
             <AllQuestions ref={questionsContainerRef}>
-              <AskQuestionButton onClick={onAskQuestionClick}>
-                Be the first to ask a question
-              </AskQuestionButton>
+              {showAskButton && (
+                <AskQuestionButton onClick={onAskQuestionClick}>
+                  Be the first to ask a question
+                </AskQuestionButton>
+              )}
             </AllQuestions>
           </CSSTransition>
         ) : (
-          questions.map((question) => (
+          questions.map((question, index) => (
             <CSSTransition
               key={question.id}
-              nodeRef={questionRef}
+              nodeRef={questionRefs.current[index]}
               timeout={500}
               classNames="question"
+              unmountOnExit
             >
-              <QuestionItem>
+              <QuestionItem ref={questionRefs.current[index]}>
                 <AskerInfo>
                   {question.asker.display_name}
                   <QuestionDate>{formatDate(question.created_at)}</QuestionDate>
@@ -91,7 +110,7 @@ const QuestionsDisplay = ({
           ))
         )}
       </TransitionGroup>
-      {!isLoading && totalQuestions > 0 && questions.length > 0 && (
+      {!isLoading && totalQuestions > 0 && !simulateEmpty && (
   <QuestionPagination
     currentPage={currentPage}
     totalPages={Math.ceil(totalQuestions / questionsPerPage)}

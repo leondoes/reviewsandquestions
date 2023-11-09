@@ -39,13 +39,23 @@ export const ReviewListItem = styled.li`
     padding-left: 0;
   }
 
-   // Add this for the entering animation
-   &.review-enter {
+ // Add this for the entering animation start state
+ &.review-enter {
+    opacity: 0;
+  }
+
+  // Add this for the entering active state
+  &.review-enter-active {
     animation: ${fadeIn} 500ms forwards;
   }
 
-  // Add this for the exiting animation
+  // Add this for the exiting animation start state
   &.review-exit {
+    opacity: 1;
+  }
+
+  // Add this for the exiting active state
+  &.review-exit-active {
     animation: ${fadeOut} 500ms forwards;
   }
 `;
@@ -142,6 +152,11 @@ export const NoReviewsMessage = styled.div`
   text-align: center;
   padding: 35px;
   font-size: 14px;
+
+   // Define your animation (keep the name unique if you have multiple animations)
+   animation: ${fadeIn} 0.5s ease-out forwards;
+  animation-delay: 600ms; // Same as your timeout in the useEffect hook
+  opacity: 0; // Start with the message hidden
 `;
 
 export const LoadingContainer = styled.div`
