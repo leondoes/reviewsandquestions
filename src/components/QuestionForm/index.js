@@ -16,6 +16,7 @@ import {
   ButtonRow,
   PostErrorMessage,
 } from "./styled";
+import { usePhoneView } from "../../contexts/phoneViewContext";
 
 const QuestionForm = ({ onFormSubmit, isQuestionFormVisible }) => {
   const {
@@ -24,6 +25,8 @@ const QuestionForm = ({ onFormSubmit, isQuestionFormVisible }) => {
     formState: { errors },
     reset,
   } = useForm();
+
+  const {isPhoneView} = usePhoneView();
 
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
@@ -64,7 +67,7 @@ const QuestionForm = ({ onFormSubmit, isQuestionFormVisible }) => {
           />
         </FormRow>
 
-        <BottomRow>
+        <BottomRow simulatePhoneView={isPhoneView}>
           <FormRow>
             <LabelRow>
               <StyledLabel>* Use your name:</StyledLabel>
@@ -72,7 +75,7 @@ const QuestionForm = ({ onFormSubmit, isQuestionFormVisible }) => {
                 <ErrorMessage>{errors.name.message}</ErrorMessage>
               )}
             </LabelRow>
-            <StyledInput
+            <StyledInput simulatePhoneView={isPhoneView}
               type="text"
               {...register("name", { required: "Name field cannot be empty" })}
             />
@@ -96,7 +99,7 @@ const QuestionForm = ({ onFormSubmit, isQuestionFormVisible }) => {
               })}
             />
           </FormRow>
-        </BottomRow>
+        </BottomRow >
         <ButtonRow>
           {hasSubmitted && Object.keys(errors).length > 0 && (
             <PostErrorMessage>

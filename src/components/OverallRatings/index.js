@@ -17,11 +17,13 @@ import StarCalculator from "../StarCalculator";
 import QuestionForm from "../QuestionForm";
 import SortByStars from "../SortByStars";
 import DataContext from "../../contexts/Data/DataContext";
+import { usePhoneView } from "../../contexts/phoneViewContext";
 
 const OverallRatings = ({ isQuestionFormVisible, onAskQuestionClick, simulateReviewsEmpty }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { totalReviews, totalQuestions, averageScore } =
     useContext(DataContext);
+  const {isPhoneView} = usePhoneView();
 
   const handleAskQuestionClick = () => {
     onAskQuestionClick();
@@ -45,7 +47,7 @@ const OverallRatings = ({ isQuestionFormVisible, onAskQuestionClick, simulateRev
 
   return (
     <OverallContainer>
-      <RatingsContainer>
+      <RatingsContainer simulatePhoneView={isPhoneView}>
         <AverageRating>
           <StarAverage>
             {!simulateReviewsEmpty && averageScore ? averageScore.toFixed(1) : ""}
@@ -59,21 +61,21 @@ const OverallRatings = ({ isQuestionFormVisible, onAskQuestionClick, simulateRev
         </AverageRating>
         {simulateReviewsEmpty ? (
           <>
-            <Placeholder/>
-            <Placeholder/>
-            <Placeholder/>
+            <Placeholder simulatePhoneView={isPhoneView}/>
+            <Placeholder simulatePhoneView={isPhoneView}/>
+            <Placeholder simulatePhoneView={isPhoneView}/>
           </>
         ) : (
           <>
-            <VerticalDivider totalReviews={totalReviews} />
+            <VerticalDivider totalReviews={totalReviews} simulatePhoneView={isPhoneView}/>
             <StarRatingsContainer totalReviews={totalReviews}>
               <SortByStars />
             </StarRatingsContainer>
-            <VerticalDivider totalReviews={totalReviews} />
+            <VerticalDivider totalReviews={totalReviews} simulatePhoneView={isPhoneView}/>
           </>
         )}
 
-        <AskQuestionContainer>
+        <AskQuestionContainer simulatePhoneView={isPhoneView}>
           <AskQuestionButton onClick={handleAskQuestionClick}>
             Ask a Question
           </AskQuestionButton>

@@ -28,12 +28,24 @@ export const RatingsContainer = styled.div`
   padding: 28px 0px;
   align-items: center;
 
+  // Media query styles
   @media (max-width: 770px) {
     grid-template-columns: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
+  // Styles when simulatePhoneView is true
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    grid-template-columns: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // Additional styles for simulation can be added here
+  `}
 `;
 
 export const AverageRating = styled.div`
@@ -47,6 +59,13 @@ export const AverageRating = styled.div`
     padding-left: 20px;
     align-items: flex-start;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    padding-left: 20px;
+    align-items: flex-start;
+  `}
 `;
 
 export const StarAverage = styled.div`
@@ -59,14 +78,23 @@ export const StarRatingsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: ${({ totalReviews }) => totalReviews > 0 ? fadeIn : fadeOut} 0.5s ease;
-  visibility: ${({ totalReviews }) => totalReviews > 0 ? 'visible' : 'hidden'};
-  height: ${({ totalReviews }) => totalReviews > 0 ? 'auto' : '70px'};
+  animation: ${({ totalReviews }) => (totalReviews > 0 ? fadeIn : fadeOut)} 0.5s
+    ease;
+  visibility: ${({ totalReviews }) =>
+    totalReviews > 0 ? "visible" : "hidden"};
+  height: ${({ totalReviews }) => (totalReviews > 0 ? "auto" : "70px")};
 
   @media (max-width: 770px) {
-    display: flex; // You can keep flex here, no need to switch to 'none'
+    display: flex;
     padding-left: 20px;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+      display: flex;
+    padding-left: 20px;
+  `}
 `;
 
 export const VerticalDivider = styled.div`
@@ -74,21 +102,33 @@ export const VerticalDivider = styled.div`
   width: 1px;
   height: 70px;
   margin: auto;
-  animation: ${({ totalReviews }) => totalReviews > 0 ? fadeIn : fadeOut} 0.5s ease;
-  visibility: ${({ totalReviews }) => totalReviews > 0 ? 'visible' : 'hidden'};
+  animation: ${({ totalReviews }) => (totalReviews > 0 ? fadeIn : fadeOut)} 0.5s
+    ease;
+  visibility: ${({ totalReviews }) =>
+    totalReviews > 0 ? "visible" : "hidden"};
 
   @media (max-width: 770px) {
-    display: none; // Keep the divider block, no need to switch to 'none'
+    display: none;
   }
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+      display: none; 
+  `}
 `;
 
 export const Placeholder = styled.div`
-width: 100%;
-height: 70px;
+  width: 100%;
+  height: 70px;
 
-@media (max-width: 770px) {
-    display: none; // Keep the divider block, no need to switch to 'none'
+  @media (max-width: 770px) {
+    display: none;
   }
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+      display: none; 
+  `}
 `;
 
 export const AskQuestionContainer = styled.div`
@@ -101,6 +141,13 @@ export const AskQuestionContainer = styled.div`
     align-items: flex-start;
     padding-left: 20px;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+      align-items: flex-start;
+    padding-left: 20px; 
+  `}
 `;
 
 export const AskQuestionButton = styled.button`
@@ -123,8 +170,6 @@ export const AskQuestionButton = styled.button`
     background-color: #ededed;
   }
 `;
-
-
 
 export const QuestionFormContainer = styled.div`
   max-height: 0;

@@ -1,4 +1,4 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const fadeIn = keyframes`
   from {
@@ -27,10 +27,9 @@ export const AllQuestions = styled.div`
   min-height: 130px;
 `;
 
-
 export const QuestionItem = styled.div`
   width: 100%;
-  
+
   // Add this for the entering animation
   &.question-enter {
     animation: ${fadeIn} 500ms forwards;
@@ -45,8 +44,8 @@ export const QuestionItem = styled.div`
     animation: ${fadeOut} 500ms forwards;
 
     &.question-exit-active {
-  animation: ${fadeOut} 500ms forwards;
-}
+      animation: ${fadeOut} 500ms forwards;
+    }
   }
 `;
 
@@ -69,6 +68,12 @@ export const QuestionDate = styled.div`
   @media (max-width: 770px) {
     display: none;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    display: none;
+  `}
 `;
 
 export const QuestionText = styled.div`
@@ -89,6 +94,13 @@ export const AnswerInfo = styled.div`
     flex-direction: column;
     align-items: flex-start;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    flex-direction: column;
+    align-items: flex-start;
+  `}
 `;
 
 export const AnswerText = styled.div`
@@ -104,9 +116,17 @@ export const AnswerText = styled.div`
 
   @media (max-width: 770px) {
     font-size: 14px;
-    padding-right: 35px
+    padding-right: 35px;
     padding-bottom: 10px;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    font-size: 14px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+  `}
 `;
 
 export const AnswerDate = styled.div`
@@ -119,6 +139,11 @@ export const AnswerDate = styled.div`
   @media (max-width: 770px) {
     display: none;
   }
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    display: none;
+  `}
 `;
 
 export const AnswerDateMini = styled.div`
@@ -132,6 +157,16 @@ export const AnswerDateMini = styled.div`
     display: block;
     order: 3;
   }
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    font-size: 12px;
+    font-weight: 300;
+    align-self: flex-start;
+    padding-left: 15px;
+    display: block;
+    order: 3;
+  `}
 `;
 
 export const AnswerContainer = styled.div`
@@ -184,7 +219,7 @@ export const AskQuestionButton = styled.button`
 
   visibility: hidden;
   opacity: 0;
-  
+
   // Define your animation (keep the name unique if you have multiple animations)
   animation: fadeInAskButton 0.5s ease-out 600ms forwards;
 

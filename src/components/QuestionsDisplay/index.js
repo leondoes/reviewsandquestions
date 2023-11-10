@@ -18,6 +18,7 @@ import {
   AskQuestionButton,
   LoadingContainer,
 } from "./styled";
+import { usePhoneView } from "../../contexts/phoneViewContext";
 import useFetchQuestions from "../../hooks/useFetchQuestions";
 
 const QuestionsDisplay = ({
@@ -36,6 +37,7 @@ const QuestionsDisplay = ({
     return () => clearTimeout(timeoutId);
   }, []);
 
+  const {isPhoneView} = usePhoneView();
   const questionsContainerRef = useRef(null);
   const questionsPerPage = 5;
   const { questions, totalQuestions, formatDate, isLoading } =
@@ -84,21 +86,21 @@ const QuestionsDisplay = ({
               <QuestionItem ref={questionRefs.current[index]}>
                 <AskerInfo>
                   {question.asker.display_name}
-                  <QuestionDate>{formatDate(question.created_at)}</QuestionDate>
+                  <QuestionDate simulatePhoneView={isPhoneView}>{formatDate(question.created_at)}</QuestionDate>
                 </AskerInfo>
                 <QuestionText>Q: {question.content}</QuestionText>
                 {question.answers.length > 0 && (
                   <AnswerContainer>
                     <AnswerLeftBorder />
                     <AnswerContent>
-                      <AnswerInfo>
+                      <AnswerInfo simulatePhoneView={isPhoneView}>
                         Mejuri{" "}
-                        <AnswerDate>
+                        <AnswerDate simulatePhoneView={isPhoneView}>
                           {formatDate(question.answers[0].created_at)}
                         </AnswerDate>
                       </AnswerInfo>
-                      <AnswerText>A: {question.answers[0].content}</AnswerText>
-                      <AnswerDateMini>
+                      <AnswerText simulatePhoneView={isPhoneView}>A: {question.answers[0].content}</AnswerText>
+                      <AnswerDateMini simulatePhoneView={isPhoneView}>
                         {formatDate(question.answers[0].created_at)}
                       </AnswerDateMini>
                     </AnswerContent>

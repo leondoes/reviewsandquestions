@@ -39,6 +39,17 @@ export const ReviewListItem = styled.li`
     padding-left: 0;
   }
 
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 0;
+  `}
+
  // Add this for the entering animation start state
  &.review-enter {
     opacity: 0;
@@ -74,6 +85,17 @@ export const NameColumn = styled.div`
     margin-right: auto;
     font-size: 14px;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    font-weight: normal;
+    order: 2;
+    padding-left: 0;
+    flex-grow: 1;
+    margin-right: auto;
+    font-size: 14px;
+  `}
 `;
 
 export const DateColumn = styled.div`
@@ -88,6 +110,14 @@ export const DateColumn = styled.div`
     padding-right: 0;
     margin-left: auto;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    order: 3;
+    padding-right: 0;
+    margin-left: auto;
+  `}
 `;
 
 export const ContentColumn = styled.div`
@@ -100,6 +130,14 @@ export const ContentColumn = styled.div`
     flex-basis: 100%;
     margin-bottom: 10px;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    order: 1;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  `}
 `;
 
 export const AllReviews = styled.ul`
@@ -118,6 +156,13 @@ export const Stars = styled.div`
     order: 1;
     padding-bottom: 10px;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    order: 1;
+    padding-bottom: 10px;
+  `}
 `;
 
 export const Title = styled.div`
@@ -128,6 +173,13 @@ export const Title = styled.div`
     order: 2;
     font-size: 14px;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    order: 2;
+    font-size: 14px;
+  `}
 `;
 
 export const Content = styled.div`
@@ -146,6 +198,13 @@ export const Content = styled.div`
     order: 2;
     font-size: 14px;
   }
+
+  ${({ simulatePhoneView }) =>
+    simulatePhoneView &&
+    `
+    order: 2;
+    font-size: 14px;
+  `}
 `;
 
 export const NoReviewsMessage = styled.div`

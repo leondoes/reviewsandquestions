@@ -14,8 +14,10 @@ import {
   LoadingContainer,
 } from "./styled";
 import useFetchReviews from "../../hooks/useFetchReviews";
+import { usePhoneView } from "../../contexts/phoneViewContext";
 
 const ReviewsDisplay = ({ currentPage, setCurrentPage, simulateEmpty }) => {
+  const {isPhoneView} = usePhoneView();
   const reviewsContainerRef = useRef(null);
   const { reviews, totalReviews, isLoading } = useFetchReviews(currentPage, simulateEmpty); // Extract isLoading
 
@@ -56,12 +58,12 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage, simulateEmpty }) => {
         nodeRef={reviewRef}
         unmountOnExit
       >
-        <ReviewListItem ref={reviewRef}>
-                <NameColumn>{review.displayName}</NameColumn>
-                <ContentColumn>
-                  <Stars>{renderStarRating(review.starRating)}</Stars>
-                  <Title>{review.reviewTitle}</Title>
-                  <Content>
+        <ReviewListItem simulatePhoneView={isPhoneView} ref={reviewRef}>
+                <NameColumn simulatePhoneView={isPhoneView}>{review.displayName}</NameColumn>
+                <ContentColumn simulatePhoneView={isPhoneView}>
+                  <Stars simulatePhoneView={isPhoneView}>{renderStarRating(review.starRating)}</Stars>
+                  <Title simulatePhoneView={isPhoneView}>{review.reviewTitle}</Title>
+                  <Content simulatePhoneView={isPhoneView}>
                     {review.reviewText.length > 400
                       ? expandedContent[index]
                         ? review.reviewText
@@ -74,7 +76,7 @@ const ReviewsDisplay = ({ currentPage, setCurrentPage, simulateEmpty }) => {
                     )}
                   </Content>
                 </ContentColumn>
-                <DateColumn>{review.reviewDate}</DateColumn>
+                <DateColumn simulatePhoneView={isPhoneView}>{review.reviewDate}</DateColumn>
                 </ReviewListItem>
       </CSSTransition>
     );

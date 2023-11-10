@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { PaginationContainer, PageButton, ActiveButton } from "./styled";
+import { usePhoneView } from "../../contexts/phoneViewContext";
 
 const QuestionPagination = ({
   currentPage,
@@ -7,24 +8,26 @@ const QuestionPagination = ({
   onPageChange,
   questionsContainerRef,
 }) => {
-  // Initialize state with the appropriate value based on the current window width
-  const [maxVisiblePages, setMaxVisiblePages] = useState(
-    window.innerWidth > 770 ? 9 : 5
-  );
+  const { isPhoneView } = usePhoneView();
 
-  // Effect to adjust `maxVisiblePages` on window resize
+  const calculateMaxVisiblePages = () => isPhoneView ? 5 : (window.innerWidth > 770 ? 9 : 5);
+
+  const [maxVisiblePages, setMaxVisiblePages] = useState(calculateMaxVisiblePages());
+
   useEffect(() => {
+    const calculateMaxVisiblePages = () => isPhoneView ? 5 : (window.innerWidth > 770 ? 9 : 5);
+  
     const handleResize = () => {
-      setMaxVisiblePages(window.innerWidth > 770 ? 9 : 5);
+      setMaxVisiblePages(calculateMaxVisiblePages());
     };
-
+  
     window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener when the component unmounts
+    setMaxVisiblePages(calculateMaxVisiblePages());
+  
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isPhoneView]);
 
   const handlePageChange = (newPage) => {
     if (questionsContainerRef && questionsContainerRef.current) {
