@@ -38,6 +38,4 @@ export const PageContainer = styled.div`
 
 export const ContentContainer = styled.div`
 padding: 30px;
-overflow-x: hidden;
-  margin-right: calc(-1 * (100vw - 100%));
 `;

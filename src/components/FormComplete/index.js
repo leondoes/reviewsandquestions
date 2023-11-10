@@ -20,7 +20,8 @@ const FormComplete = ({ onClose }) => {
             submit your question.
           </Message>
           <Message>
-            Your question will appear on the site once someone answers it.
+            Your question will appear on the site once someone answers it. 
+            <div><b>*simulation mode: results in console</b></div>
           </Message>
         </ModalContainer>
       </Overlay>

@@ -62,6 +62,12 @@ export const BottomRow = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
   }
+
+  ${({ simulatePhoneView }) => simulatePhoneView && `
+      flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  `}
 `;
 
 export const StyledLabel = styled.label`
@@ -92,6 +98,11 @@ export const StyledInput = styled.input`
   @media (max-width: 770px) {
     width: 100%;
   }
+
+  ${({ simulatePhoneView }) => simulatePhoneView && `
+      width: 100%;
+  `}
+  
 `;
 
 export const QuestionInput = styled.textarea`

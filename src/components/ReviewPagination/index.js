@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { PaginationContainer, PageButton, ActiveButton } from "./styled";
+import { usePhoneView } from "../../contexts/phoneViewContext";
 
 const ReviewPagination = ({
   currentPage,
@@ -7,9 +8,26 @@ const ReviewPagination = ({
   onPageChange,
   reviewsContainerRef,
 }) => {
-  const [maxVisiblePages, setMaxVisiblePages] = useState(
-    window.innerWidth > 770 ? 9 : 5
-  );
+  const { isPhoneView } = usePhoneView();
+
+  const calculateMaxVisiblePages = () => isPhoneView ? 5 : (window.innerWidth > 770 ? 9 : 5);
+
+  const [maxVisiblePages, setMaxVisiblePages] = useState(calculateMaxVisiblePages());
+
+  useEffect(() => {
+    const calculateMaxVisiblePages = () => isPhoneView ? 5 : (window.innerWidth > 770 ? 9 : 5);
+  
+    const handleResize = () => {
+      setMaxVisiblePages(calculateMaxVisiblePages());
+    };
+  
+    window.addEventListener('resize', handleResize);
+    setMaxVisiblePages(calculateMaxVisiblePages());
+  
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isPhoneView]);
 
   useEffect(() => {
     const handleResize = () => {
