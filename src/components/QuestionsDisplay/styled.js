@@ -30,7 +30,6 @@ export const AllQuestions = styled.div`
 export const QuestionItem = styled.div`
   width: 100%;
 
-  // Add this for the entering animation
   &.question-enter {
     animation: ${fadeIn} 500ms forwards;
   }
@@ -39,7 +38,6 @@ export const QuestionItem = styled.div`
     animation: ${fadeIn} 500ms forwards;
   }
 
-  // Add this for the exiting animation
   &.question-exit {
     animation: ${fadeOut} 500ms forwards;
 
@@ -147,7 +145,7 @@ export const AnswerDate = styled.div`
 `;
 
 export const AnswerDateMini = styled.div`
-  display: none; // Hide this by default
+  display: none;
 
   @media (max-width: 770px) {
     font-size: 12px;
@@ -220,7 +218,6 @@ export const AskQuestionButton = styled.button`
   visibility: hidden;
   opacity: 0;
 
-  // Define your animation (keep the name unique if you have multiple animations)
   animation: fadeInAskButton 0.5s ease-out 600ms forwards;
 
   @keyframes fadeInAskButton {
@@ -230,7 +227,7 @@ export const AskQuestionButton = styled.button`
     }
     1% {
       opacity: 0;
-      visibility: visible; // Make the button visible but still fully transparent
+      visibility: visible;
     }
     100% {
       opacity: 1;

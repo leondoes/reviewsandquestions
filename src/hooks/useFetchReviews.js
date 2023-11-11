@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import mockReviewData from '../mocks/mockReviews.json';
+import mockReviewData from "../mocks/mockReviews.json";
 
 const useFetchReviews = (currentPage, simulateEmpty) => {
   const [reviews, setReviews] = useState([]);
@@ -25,12 +25,11 @@ const useFetchReviews = (currentPage, simulateEmpty) => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        // Fetching logic starts here
         setIsLoading(true);
         const pageKey = `page${currentPage}`;
         const data = mockReviewData[pageKey];
         if (!data) {
-          throw new Error('Page data not found');
+          throw new Error("Page data not found");
         }
 
         const pagination = data.response.pagination;
@@ -56,7 +55,6 @@ const useFetchReviews = (currentPage, simulateEmpty) => {
           }));
           setReviews(extractedReviews);
         }
-        // Fetching logic ends here
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -65,17 +63,15 @@ const useFetchReviews = (currentPage, simulateEmpty) => {
     };
 
     if (simulateEmpty) {
-      // When simulateEmpty is true, we simulate an empty state
       setReviews([]);
       setTotalReviews(0);
       setAverageScore(0);
       setStarDistribution({});
       setIsLoading(false);
     } else {
-      // When simulateEmpty is false, we proceed to fetch reviews
       fetchReviews().catch(console.error);
     }
-  }, [currentPage, simulateEmpty]); // Corrected the dependencies of useEffect
+  }, [currentPage, simulateEmpty]);
 
   return { reviews, totalReviews, averageScore, starDistribution, isLoading };
 };

@@ -36,7 +36,6 @@ export const RatingsContainer = styled.div`
     align-items: flex-start;
   }
 
-  // Styles when simulatePhoneView is true
   ${({ simulatePhoneView }) =>
     simulatePhoneView &&
     `
@@ -44,7 +43,6 @@ export const RatingsContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    // Additional styles for simulation can be added here
   `}
 `;
 

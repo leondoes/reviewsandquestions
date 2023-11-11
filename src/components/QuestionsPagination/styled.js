@@ -30,9 +30,8 @@ export const PageButton = styled.button`
   &:focus {
     outline: none;
   }
-  -webkit-text-fill-color: black; // Ensures the text color remains black on iOS
+  -webkit-text-fill-color: black;
 `;
-
 
 export const ActiveButton = styled(PageButton)`
   font-weight: bold;

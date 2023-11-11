@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react';
-import DataContext from '../../contexts/Data/DataContext';
+import React, { useContext, useState } from "react";
+import DataContext from "../../contexts/Data/DataContext";
 import {
   StarRatingList,
   StarRow,
@@ -7,7 +7,7 @@ import {
   FilledStars,
   Bar,
   BarContainer,
-} from './styled';
+} from "./styled";
 
 const SortByStars = () => {
   const { starDistribution } = useContext(DataContext);
@@ -27,7 +27,7 @@ const SortByStars = () => {
   };
 
   const handleKeyDown = (event, star) => {
-    if (event.key === 'Enter') {
+    if (event.key === "Enter") {
       handleStarClick(star);
       // Prevent default action to avoid any unwanted side effects
       event.preventDefault();

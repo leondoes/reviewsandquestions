@@ -10,22 +10,26 @@ const ReviewPagination = ({
 }) => {
   const { isPhoneView } = usePhoneView();
 
-  const calculateMaxVisiblePages = () => isPhoneView ? 5 : (window.innerWidth > 770 ? 9 : 5);
+  const calculateMaxVisiblePages = () =>
+    isPhoneView ? 5 : window.innerWidth > 770 ? 9 : 5;
 
-  const [maxVisiblePages, setMaxVisiblePages] = useState(calculateMaxVisiblePages());
+  const [maxVisiblePages, setMaxVisiblePages] = useState(
+    calculateMaxVisiblePages()
+  );
 
   useEffect(() => {
-    const calculateMaxVisiblePages = () => isPhoneView ? 5 : (window.innerWidth > 770 ? 9 : 5);
-  
+    const calculateMaxVisiblePages = () =>
+      isPhoneView ? 5 : window.innerWidth > 770 ? 9 : 5;
+
     const handleResize = () => {
       setMaxVisiblePages(calculateMaxVisiblePages());
     };
-  
-    window.addEventListener('resize', handleResize);
+
+    window.addEventListener("resize", handleResize);
     setMaxVisiblePages(calculateMaxVisiblePages());
-  
+
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, [isPhoneView]);
 
@@ -34,12 +38,10 @@ const ReviewPagination = ({
       setMaxVisiblePages(window.innerWidth > 770 ? 9 : 5);
     };
 
-    // Set up event listener
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
-    // Clean up event listener
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
