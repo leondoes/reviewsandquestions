@@ -1,5 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { SimulationButton, SimulationContainer } from "./styled";
+import { ReactComponent as TriangleRight } from '../../Assets/triangle-right.svg';
+import { ReactComponent as TriangleDown } from '../../Assets/triangle-down.svg';
+
 
 const SimulationMenu = ({
   toggleReviewsEmptyState,
@@ -7,38 +10,28 @@ const SimulationMenu = ({
   handleTogglePhoneView,
 }) => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const menuRef = useRef();
-  const [menuFocus, setMenuFocus] = useState(false);
+  const toggleRef = useRef();
 
   useEffect(() => {
-    if (isMenuVisible && !menuFocus) {
-      setIsMenuVisible(false);
-    }
-  }, [menuFocus, isMenuVisible]);
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
-  const handleMenuFocus = () => {
-    setMenuFocus(true);
-  };
+    window.addEventListener('resize', handleResize);
 
-  const handleMenuBlur = (event) => {
-    setTimeout(() => {
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(document.activeElement)
-      ) {
-        setMenuFocus(false);
-      }
-    }, 10);
-  };
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     function handleClickOutside(event) {
-      // Only close the menu if it's already visible and the clicked element is not within the menuRef
-      if (isMenuVisible && menuRef.current && !menuRef.current.contains(event.target)) {
+      if (isMenuVisible && !toggleRef.current.contains(event.target) && !menuRef.current.contains(event.target)) {
         setIsMenuVisible(false);
       }
     }
-    // Listen for mouse up to end all click events before handling outside click
     document.addEventListener("mouseup", handleClickOutside);
     return () => {
       document.removeEventListener("mouseup", handleClickOutside);
@@ -46,7 +39,7 @@ const SimulationMenu = ({
   }, [isMenuVisible]);
 
   const toggleMenu = () => {
-    setIsMenuVisible(!isMenuVisible);
+    setIsMenuVisible(prevState => !prevState);
   };
 
   const handleToggleAction = (action) => {
@@ -61,22 +54,18 @@ const SimulationMenu = ({
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      toggleMenu();
+    }
+  };
+
   return (
-    <SimulationContainer
-      isMenuVisible={isMenuVisible}
-      onFocus={handleMenuFocus}
-      onBlur={handleMenuBlur}
-    >
-      <div
-        className="drawer-toggle"
-        onClick={toggleMenu}
-        tabIndex="0"
-        onKeyPress={(e) => handleKeyPress(e, toggleMenu)}
-      >
-        {isMenuVisible ? "▼" : "►"}
-        <span>Simulation Controls</span>
+    <SimulationContainer isMenuVisible={isMenuVisible}>
+      <div ref={toggleRef} onClick={toggleMenu} onKeyDown={handleKeyDown} tabIndex="0">
+      {isMenuVisible ? <TriangleDown /> : <TriangleRight />} Simulation Controls
       </div>
-      <div className="menu" ref={menuRef}>
+      <div className="menu" style={{ display: isMenuVisible ? "block" : "none" }} ref={menuRef}>
         <SimulationButton
           onClick={() => handleToggleAction(toggleReviewsEmptyState)}
           tabIndex="0"
@@ -92,10 +81,10 @@ const SimulationMenu = ({
           Questions Empty State
         </SimulationButton>
         <SimulationButton
+          className={windowWidth <= 770 ? "toggle-phone-view" : ""}
           onClick={() => handleToggleAction(handleTogglePhoneView)}
           tabIndex="0"
           onKeyPress={(e) => handleKeyPress(e, handleTogglePhoneView)}
-          onBlur={handleMenuBlur}
         >
           Simulate Phone View
         </SimulationButton>

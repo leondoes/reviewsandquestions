@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SimulationButton = styled.button`
-user-select: none;
+  user-select: none;
   border: 0px solid black !important;
   background: none;
   font-size: 12px;
@@ -17,32 +17,24 @@ user-select: none;
   &:hover {
     background-color: #ededed;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     &.toggle-phone-view {
-      opacity: 0.5; // Gray out the button
-      cursor: not-allowed; // Indicate that the button is not clickable
-
-      position: relative; // Positioning context for the pseudo-element
-
-      // Add a pseudo-element for the "Desktop Only" text
+      opacity: 0.5;
+      cursor: not-allowed;
+      position: relative;
       &:after {
         content: "Desktop Only";
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: #ffffff; // Use white or another contrasting color
-        background-color: rgba(
-          0,
-          0,
-          0,
-          0.75
-        ); // Semi-transparent black background
-        padding: 2px 5px; // Add some padding around the text
-        border-radius: 3px; // Optional: rounded corners for the label background
-        font-size: 12px; // Make the font larger for visibility
-        font-weight: bold; // Optional: make the font bold
-        z-index: 2; // Ensure it's above the button content
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: bold;
+        z-index: 10;
       }
     }
   }
@@ -51,12 +43,13 @@ user-select: none;
 export const SimulationContainer = styled.div`
   position: relative; // Make this a positioned container
   user-select: none;
+  width: 200px;
+  cursor: pointer;
   .drawer-toggle {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     padding-bottom: 10px;
-    // Additional styling for the drawer toggle
   }
   .menu {
     display: ${({ isMenuVisible }) => (isMenuVisible ? "flex" : "none")};
