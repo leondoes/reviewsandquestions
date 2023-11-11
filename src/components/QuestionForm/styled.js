@@ -100,7 +100,7 @@ export const StyledInput = styled.input`
   }
 
   ${({ simulatePhoneView }) => simulatePhoneView && `
-      width: 100%;
+      width: 358px;
   `}
   
 `;
@@ -128,6 +128,10 @@ export const SubmitButton = styled.button`
   box-sizing: border-box;
   border: 1px solid black;
   background: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 24px;
   font-size: 14px;
   font-weight: 500;

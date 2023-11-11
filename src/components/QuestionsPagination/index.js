@@ -10,22 +10,26 @@ const QuestionPagination = ({
 }) => {
   const { isPhoneView } = usePhoneView();
 
-  const calculateMaxVisiblePages = () => isPhoneView ? 5 : (window.innerWidth > 770 ? 9 : 5);
+  const calculateMaxVisiblePages = () =>
+    isPhoneView ? 5 : window.innerWidth > 770 ? 9 : 5;
 
-  const [maxVisiblePages, setMaxVisiblePages] = useState(calculateMaxVisiblePages());
+  const [maxVisiblePages, setMaxVisiblePages] = useState(
+    calculateMaxVisiblePages()
+  );
 
   useEffect(() => {
-    const calculateMaxVisiblePages = () => isPhoneView ? 5 : (window.innerWidth > 770 ? 9 : 5);
-  
+    const calculateMaxVisiblePages = () =>
+      isPhoneView ? 5 : window.innerWidth > 770 ? 9 : 5;
+
     const handleResize = () => {
       setMaxVisiblePages(calculateMaxVisiblePages());
     };
-  
-    window.addEventListener('resize', handleResize);
+
+    window.addEventListener("resize", handleResize);
     setMaxVisiblePages(calculateMaxVisiblePages());
-  
+
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, [isPhoneView]);
 

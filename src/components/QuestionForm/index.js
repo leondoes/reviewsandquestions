@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"; // Import useEffect along with useState
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import {
   FormContainer,
@@ -26,7 +26,7 @@ const QuestionForm = ({ onFormSubmit, isQuestionFormVisible }) => {
     reset,
   } = useForm();
 
-  const {isPhoneView} = usePhoneView();
+  const { isPhoneView } = usePhoneView();
 
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
@@ -75,7 +75,8 @@ const QuestionForm = ({ onFormSubmit, isQuestionFormVisible }) => {
                 <ErrorMessage>{errors.name.message}</ErrorMessage>
               )}
             </LabelRow>
-            <StyledInput simulatePhoneView={isPhoneView}
+            <StyledInput
+              simulatePhoneView={isPhoneView}
               type="text"
               {...register("name", { required: "Name field cannot be empty" })}
             />
@@ -89,6 +90,7 @@ const QuestionForm = ({ onFormSubmit, isQuestionFormVisible }) => {
               )}
             </LabelRow>
             <StyledInput
+              simulatePhoneView={isPhoneView}
               type="email"
               {...register("email", {
                 required: "Email field cannot be empty",
@@ -99,7 +101,7 @@ const QuestionForm = ({ onFormSubmit, isQuestionFormVisible }) => {
               })}
             />
           </FormRow>
-        </BottomRow >
+        </BottomRow>
         <ButtonRow>
           {hasSubmitted && Object.keys(errors).length > 0 && (
             <PostErrorMessage>

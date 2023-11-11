@@ -12,7 +12,7 @@ export const TabStyle = styled.button`
   font-size: 14px;
   line-height: 17px;
   border: none;
-  padding-top:30px;
+  padding-top: 30px;
   margin-bottom: -2px;
   box-sizing: border-box;
   text-transform: uppercase;

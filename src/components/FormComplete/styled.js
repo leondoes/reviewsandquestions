@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Overlay = styled.div`
   top: 0;
@@ -13,13 +13,12 @@ export const Overlay = styled.div`
 export const ModalContainer = styled.div`
   box-sizing: border-box;
   padding: 20px 40px;
-  border: solid 1px #E3E3E3;
+  border: solid 1px #e3e3e3;
   text-align: center;
   position: relative;
   margin: auto;
   width: 100%;
 `;
-
 
 export const CloseButton = styled.button`
   position: absolute;
@@ -32,19 +31,25 @@ export const CloseButton = styled.button`
 `;
 
 export const IconPlaceholder = styled.div`
-font-family: 'yotpo-widget-font';
+  font-family: "yotpo-widget-font";
   font-size: 48px; /* Icon size */
   margin-bottom: 24px;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.div`
   font-size: 24px;
+  font-weight: 500;
   color: #000;
   margin-bottom: 16px;
 `;
 
-export const Message = styled.p`
+export const Message = styled.div`
   font-size: 16px;
   color: #666;
   line-height: 1.5;
+`;
+
+export const SimMode = styled.div`
+  color: red;
+  font-weight: 700;
 `;

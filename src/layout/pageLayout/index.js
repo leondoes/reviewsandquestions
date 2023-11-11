@@ -1,4 +1,4 @@
-import { PageContainer, ContentContainer} from "./styled";
+import { PageContainer, ContentContainer } from "./styled";
 
 const PageLayout = ({ children, ...props }) => {
   return (
