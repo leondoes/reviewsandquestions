@@ -10,7 +10,7 @@ import {
 } from "./styled";
 import DataProvider from "../../contexts/Data/DataProvider";
 import { usePhoneView } from "../../contexts/phoneViewContext";
-import SimulationMenu from "../SimulationMenu";
+import TestingMenu from "../TestingMenu";
 
 const RandQ = () => {
   const [isQuestionFormVisible, setIsQuestionFormVisible] = useState(false);
@@ -44,7 +44,7 @@ const RandQ = () => {
   return (
     <PageLayout>
       <DataProvider>
-        <SimulationMenu
+        <TestingMenu
           toggleReviewsEmptyState={toggleReviewsEmptyState}
           toggleQuestionsEmptyState={toggleQuestionsEmptyState}
           handleTogglePhoneView={handleTogglePhoneView}

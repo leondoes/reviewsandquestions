@@ -1,18 +1,36 @@
 import React, { useState, useRef, useEffect } from "react";
-import { SimulationButton, SimulationContainer } from "./styled";
+import { TestingButton, TestingContainer } from "./styled";
 import { ReactComponent as TriangleRight } from '../../Assets/triangle-right.svg';
 import { ReactComponent as TriangleDown } from '../../Assets/triangle-down.svg';
 
 
-const SimulationMenu = ({
+const TestingMenu = ({
   toggleReviewsEmptyState,
   toggleQuestionsEmptyState,
   handleTogglePhoneView,
 }) => {
+  const [reviewsState, setReviewsState] = useState(true);
+  const [questionsState, setQuestionsState] = useState(true);
+  const [isPhoneView, setIsPhoneView] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const menuRef = useRef();
   const toggleRef = useRef();
+
+  const handleToggleReviews = () => {
+    setReviewsState(!reviewsState);
+    toggleReviewsEmptyState();
+  };
+
+  const handleToggleQuestions = () => {
+    setQuestionsState(!questionsState);
+    toggleQuestionsEmptyState();
+  };
+
+  const handleTogglePhone = () => {
+    setIsPhoneView(!isPhoneView);
+    handleTogglePhoneView();
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -61,36 +79,36 @@ const SimulationMenu = ({
   };
 
   return (
-    <SimulationContainer isMenuVisible={isMenuVisible}>
+    <TestingContainer isMenuVisible={isMenuVisible}>
       <div ref={toggleRef} onClick={toggleMenu} onKeyDown={handleKeyDown} tabIndex="0">
-      {isMenuVisible ? <TriangleDown /> : <TriangleRight />} Simulation Controls
+      {isMenuVisible ? <TriangleDown /> : <TriangleRight />} Testing Controls
       </div>
       <div className="menu" style={{ display: isMenuVisible ? "block" : "none" }} ref={menuRef}>
-        <SimulationButton
-          onClick={() => handleToggleAction(toggleReviewsEmptyState)}
-          tabIndex="0"
-          onKeyPress={(e) => handleKeyPress(e, toggleReviewsEmptyState)}
-        >
-          Reviews Empty State
-        </SimulationButton>
-        <SimulationButton
-          onClick={() => handleToggleAction(toggleQuestionsEmptyState)}
-          tabIndex="0"
-          onKeyPress={(e) => handleKeyPress(e, toggleQuestionsEmptyState)}
-        >
-          Questions Empty State
-        </SimulationButton>
-        <SimulationButton
-          className={windowWidth <= 770 ? "toggle-phone-view" : ""}
-          onClick={() => handleToggleAction(handleTogglePhoneView)}
-          tabIndex="0"
-          onKeyPress={(e) => handleKeyPress(e, handleTogglePhoneView)}
-        >
-          Simulate Phone View
-        </SimulationButton>
+      <TestingButton
+        onClick={handleToggleReviews}
+        tabIndex="0"
+        onKeyPress={(e) => handleKeyPress(e, handleToggleReviews)}
+      >
+        {reviewsState ? "Reviews Empty State" : "Populate Reviews"}
+      </TestingButton>
+      <TestingButton
+        onClick={handleToggleQuestions}
+        tabIndex="0"
+        onKeyPress={(e) => handleKeyPress(e, handleToggleQuestions)}
+      >
+        {questionsState ? "Questions Empty State" : "Populate Questions"}
+      </TestingButton>
+      <TestingButton
+        className={windowWidth <= 770 ? "toggle-phone-view" : ""}
+        onClick={handleTogglePhone}
+        tabIndex="0"
+        onKeyPress={(e) => handleKeyPress(e, handleTogglePhone)}
+      >
+        {isPhoneView ? "Exit Phone View" : "Simulate Phone View"}
+      </TestingButton>
       </div>
-    </SimulationContainer>
+    </TestingContainer>
   );
 };
 
-export default SimulationMenu;
+export default TestingMenu;

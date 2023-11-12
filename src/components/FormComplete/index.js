@@ -22,7 +22,7 @@ const FormComplete = ({ onClose }) => {
         </Message>
         <Message>
           Your question will appear on the site once someone answers it.
-          <SimMode>*simulation mode: results in console</SimMode>
+          <SimMode>*Testing mode: results in console</SimMode>
         </Message>
       </ModalContainer>
     </Overlay>

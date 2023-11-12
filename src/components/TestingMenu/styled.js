@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SimulationButton = styled.button`
+export const TestingButton = styled.button`
   user-select: none;
   border: 0px solid black !important;
   background: none;
@@ -40,7 +40,7 @@ export const SimulationButton = styled.button`
   }
 `;
 
-export const SimulationContainer = styled.div`
+export const TestingContainer = styled.div`
   position: relative; // Make this a positioned container
   user-select: none;
   width: 200px;
