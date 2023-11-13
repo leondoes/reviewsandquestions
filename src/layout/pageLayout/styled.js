@@ -5,8 +5,6 @@ export const PageContainer = styled.div`
   font-family: ${themeFont.ContentFont};
   background-color: white;
   height: 100%;
-  width: 100%;
-  width: 100vw;
 
   display: grid;
   grid-template-columns:
