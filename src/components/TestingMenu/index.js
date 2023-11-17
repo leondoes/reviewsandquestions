@@ -28,8 +28,10 @@ const TestingMenu = ({
   };
 
   const handleTogglePhone = () => {
-    setIsPhoneView(!isPhoneView);
-    handleTogglePhoneView();
+    if (windowWidth > 770) {
+      setIsPhoneView(!isPhoneView);
+      handleTogglePhoneView();
+    }
   };
 
   useEffect(() => {
