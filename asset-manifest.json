@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/reviewsandquestions/static/css/main.2ee08f68.css",
-    "main.js": "/reviewsandquestions/static/js/main.5f8dd89c.js",
+    "main.js": "/reviewsandquestions/static/js/main.8de9d0f7.js",
     "static/media/yotpo-widget-font.svg": "/reviewsandquestions/static/media/yotpo-widget-font.7291a325ffe1ab8eccc3.svg",
     "static/media/yotpo-widget-font.woff": "/reviewsandquestions/static/media/yotpo-widget-font.f0b59efbc86fcd09d072.woff",
     "index.html": "/reviewsandquestions/index.html",
     "static/media/triangle-down.svg": "/reviewsandquestions/static/media/triangle-down.763187ce5ec9560ae422b1fdfc660f25.svg",
     "static/media/triangle-right.svg": "/reviewsandquestions/static/media/triangle-right.43268486a23dec0c17e16f8689dd72ab.svg",
     "main.2ee08f68.css.map": "/reviewsandquestions/static/css/main.2ee08f68.css.map",
-    "main.5f8dd89c.js.map": "/reviewsandquestions/static/js/main.5f8dd89c.js.map"
+    "main.8de9d0f7.js.map": "/reviewsandquestions/static/js/main.8de9d0f7.js.map"
   },
   "entrypoints": [
     "static/css/main.2ee08f68.css",
-    "static/js/main.5f8dd89c.js"
+    "static/js/main.8de9d0f7.js"
   ]
 }
